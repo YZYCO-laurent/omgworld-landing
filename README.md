@@ -1,104 +1,66 @@
-# OMG Fibre Soda — LT landing page
+# OMG Fibre Soda — LT landing pages
 
-Single-page Lithuanian conversion funnel for the OMG Fibre Soda Variety Pack.
-Static HTML, no build step, no dependencies. One request, no framework.
+Three design variants of the same funnel. Static HTML, no build step, no
+dependencies, one file per page.
 
-Live target: **https://go.omgworld.com**
+| File | URL after deploy | Concept |
+|---|---|---|
+| `index.html` | `/` | **A — brand-faithful.** The omgworld.com look, layout defects fixed. |
+| `v2.html` | `/v2` | **B — quiz-first.** The fibre test *is* the landing page. |
+| `v3.html` | `/v3` | **C — product-first.** PDP structure on a neutral canvas. |
+
+All three share the same offer, the same Shopify checkout permalink, the same
+pixel and the same quiz logic. They differ only in structure and visual system,
+so a test between them measures layout, not copy.
 
 ---
 
-## Before you deploy — one required edit
+## Before you deploy
 
-Open `index.html`, find the `CFG` block near the bottom (~line 780) and set the Meta Pixel ID:
-
-```js
-var CFG = {
-  shop:      'https://omgworld.com',
-  variantId: '57963807605067',   // Fibre Soda Variety Pack — 12 pack
-  qty:       1,
-  discount:  'OMGLT10',
-  locale:    'lt',
-  price:     22.87,
-  currency:  'EUR',
-  pixelId:   'REPLACE_WITH_PIXEL_ID',   // <-- set this
-  ...
-};
-```
-
-Until `pixelId` is set, the page works normally but fires no Meta events.
-
-Everything else about the offer — price, discount code, variant, currency — is
-configured in that same block. Changing the price on the page requires editing the
-displayed strings too (search for `22,87`).
+Nothing. The Meta Pixel ID (`1031494262801665`) and the variant ID are already
+set in each file's `CFG` block. The only thing that must change before the
+campaign goes live is the domain — see **Domain** below.
 
 ---
 
 ## Deploy
 
-### Option A — GitHub + Vercel (recommended)
-
-Gives you auto-deploy on push, a preview URL per commit for client review, and
-one-click rollback.
-
-```bash
-git init
-git add .
-git commit -m "OMG Fibre Soda LT landing page"
-git branch -M main
-git remote add origin git@github.com:<org>/omg-lp-lt.git
-git push -u origin main
-```
-
-Then in Vercel: **Add New → Project → Import** the repo.
+Drop the folder on Vercel (or push to the repo Vercel is watching).
 
 - Framework preset: **Other**
-- Build command: *(leave empty)*
-- Output directory: *(leave empty — repo root is served)*
-- Install command: *(leave empty)*
+- Build command / output directory / install command: *(all empty — repo root is served)*
 
-### Option B — Vercel CLI
-
-```bash
-npm i -g vercel
-vercel --prod
-```
-
-### Option C — drag and drop
-
-Zip this folder and drop it on the Vercel dashboard. Fine for a quick client
-preview, but you lose version history.
+`vercel.json` sets `cleanUrls`, so `v2.html` is reachable at `/v2` and `v3.html`
+at `/v3`.
 
 ---
 
 ## Domain — this part matters
 
-Point **`go.omgworld.com`** at the deployment:
-
-| Type  | Name | Value                 |
-|-------|------|-----------------------|
+| Type | Name | Value |
+|---|---|---|
 | CNAME | `go` | `cname.vercel-dns.com` |
 
 **Do not run the live campaign on a `*.vercel.app` URL.** The Meta pixel writes
-`_fbp` / `_fbc` as first-party cookies on the registrable domain. Serving the page
-from a subdomain of `omgworld.com` means those identifiers carry through to the
-Shopify checkout; serving it from `vercel.app` means they do not, and purchases
-arrive unattributed. A `vercel.app` URL is fine for the internal checkpoint review.
+`_fbp` / `_fbc` as first-party cookies on the registrable domain. Serving from a
+subdomain of `omgworld.com` carries those identifiers into the Shopify checkout;
+serving from `vercel.app` does not, and purchases arrive unattributed. A
+`vercel.app` URL is fine for the internal review only.
 
 ---
 
 ## How checkout works
 
-Every CTA links to a Shopify cart permalink:
+Every CTA on every variant links to the same Shopify cart permalink:
 
 ```
 https://omgworld.com/cart/57963807605067:1?discount=OMGLT10&locale=lt
 ```
 
-This skips the English storefront entirely and drops the visitor straight into a
-Lithuanian Shopify checkout with the €10 discount already applied.
-
-The page also forwards `fbclid`, `ttclid`, `gclid` and all `utm_*` parameters from
-the incoming ad click onto that URL, so Shopify's own pixel can stitch the session.
+This skips the English storefront entirely and drops the visitor into a
+Lithuanian checkout with the €10 discount already applied. Each page also
+forwards `fbclid`, `ttclid`, `gclid` and all `utm_*` parameters from the
+incoming ad click onto that URL so Shopify's own pixel can stitch the session.
 
 Verified live on 16 Aug 2026: checkout renders in Lithuanian, total `22,87 €`,
 shipping `NEMOKAMAI`, discount label `IŠ VISO SUTAUPYTA 10,00 €`.
@@ -118,48 +80,62 @@ before a decision are queued and replayed on accept, discarded on decline.
 | `LP_QuizComplete` | custom | Result shown — carries `fibre_score`, `fibre_gap`, `bracket` |
 | `Lead` | standard | Email submitted on the result screen |
 | `AddToCart` | standard | Any CTA click, carries `cta_location` |
-| `LP_CheckoutClick` | custom | Same click — used to separate LP intent from Shopify's own events |
+| `LP_CheckoutClick` | custom | Same click — separates LP intent from Shopify's own events |
 | `LP_Scroll` | custom | 25 / 50 / 75 / 100% depth |
 
+**Every event carries `lp_variant` (`A`, `B` or `C`).** That is what makes the
+three-way comparison readable in Events Manager without three separate pixels.
+Newsletter signups are also tagged `variant-A|B|C` in Shopify.
+
 `InitiateCheckout` and `Purchase` are **not** fired here — Shopify's own Meta
-integration owns those. Connect the pixel in the Shopify admin so those events
-and CAPI work.
+integration owns those.
 
 ---
 
-## Email capture
+## Brand assets — where they come from
 
-The quiz result form posts to Shopify's `/contact` newsletter endpoint through a
-hidden iframe, tagging the customer `lp-fibre-quiz,lt-launch`. It does not navigate
-away from the page.
+- **Logo:** the real store file, `omg_logo_black_3.png`, served from the Shopify CDN.
+- **Product photography:** the Variety Pack's own media (12-pack shot, four-flavour
+  shot, lifestyle shot) plus the four single-can shots, all hotlinked from the
+  store CDN so imagery stays in sync.
+- **UGC review cards:** the same four customers, photos and product tags as the
+  "See what the community is saying" section on omgworld.com.
+- **Footer:** mirrors the store footer — same four link columns, same pink
+  (`#FFE1F0`) on plum (`#8A086E`), same social accounts — plus the company
+  registration details.
 
-Worth confirming on the first live submission that the customer record appears in
-Shopify. If it does not, swap the form action for Klaviyo/Omnisend — the surrounding
-markup and the `Lead` event do not change.
+### A note on the brand font
+
+The store's display face **Gila is not used here on purpose.** It has no
+Lithuanian diacritics: `ą`, `č`, `ė`, `į` and `ų` are missing from the file and
+fall back to a system font *mid-word*, which looks broken in Lithuanian
+headlines. These pages use **Montserrat**, which is already the store's body
+face, so the pages stay on-brand without the glyph problem. If the brand wants
+Gila in headlines, the font needs a Baltic character set added first.
 
 ---
 
 ## Known items to confirm with the client
 
 1. **Delivery estimate.** Shopify checkout quoted 25–28 August for an order placed
-   16 August. All "1–2 day" claims were removed from the page rather than contradict
-   the checkout — restore them once delivery settings are fixed.
-2. **Duplicate shipping rate.** Two domestic rates both named "Free shipping", one at
-   €1.00.
+   16 August. All "1–2 day" claims were removed rather than contradict the
+   checkout — restore them once delivery settings are fixed.
+2. **Duplicate shipping rate.** Two domestic rates both named "Free shipping",
+   one at €1.00.
 3. **Fonts.** Loaded from Google Fonts. If GDPR posture requires it, self-host
-   Poppins and Inter and drop the `<link>` tags.
-4. **Reviews.** The four Lithuanian reviews are the client's own approved copy from
-   the campaign brief.
+   Montserrat and drop the `<link>` tags.
+4. **Reviews.** The four Lithuanian reviews are the client's own approved copy.
+5. **Deposit (užstatas).** Partner stores charge €0,10 per can; the webshop does
+   not. Worth confirming whether the same obligation applies to the online channel.
 
 ---
 
 ## Files
 
 ```
-index.html        the entire page — markup, CSS, JS
-img/benefits.*    can-in-hand shot with callouts (webp + jpg fallback)
-vercel.json       caching + security headers
+index.html    variant A — complete page, markup + CSS + JS
+v2.html       variant B — complete page, self-contained
+v3.html       variant C — complete page, self-contained
+img/          can-in-hand shot with callouts (webp + jpg fallback)
+vercel.json   caching + security headers + clean URLs
 ```
-
-Product photography is hotlinked from the client's own Shopify CDN, which is fast
-and keeps imagery in sync with the store.
