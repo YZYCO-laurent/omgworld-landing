@@ -6,366 +6,513 @@
 <title>Kiek skaidulų gauni per dieną? 30 sekundžių testas | OMG Fibre Soda</title>
 <meta name="description" content="6 klausimai apie tai, ką valgai per įprastą dieną. Sužinok savo apytikslį skaidulų kiekį ir kiek trūksta iki rekomenduojamos 25 g normos.">
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#FBFAF9">
+<meta name="theme-color" content="#ffe1f0">
 <link rel="canonical" href="https://go.omgworld.com/v2">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="lt_LT">
+<meta property="og:title" content="Kiek skaidulų gauni per dieną? 30 sekundžių testas | OMG Fibre Soda">
+<meta property="og:description" content="6 klausimai apie tai, ką valgai per įprastą dieną. Sužinok savo apytikslį skaidulų kiekį ir kiek trūksta iki rekomenduojamos 25 g normos.">
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/12-packProductImage_b4a0085b-65a3-40fd-896f-8c9be4750819.png?v=1785235809&width=900">
 <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_logo_black_3.png?width=64">
-
+<link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/12-packProductImage_b4a0085b-65a3-40fd-896f-8c9be4750819.png?v=1785235809&width=900" fetchpriority="high">
 <style>
 /* =====================================================================
-   VARIANT B — quiz-first.
-   The diagnostic is the page. No hero image, no offer card above the
-   fold: the first thing on screen is a question the visitor can answer.
+   OMG Fibre Soda — design system
+   Palette: official brand playbook (2026-04-10).
+   Type:    Instrument Serif + Hanken Grotesk, standing in for the
+            licensed Exposure + Apfel Grotezk. Both carry the full
+            Lithuanian character set (verified) — unlike Gila, which is
+            missing a c e i u and cannot be used for Lithuanian copy.
    ===================================================================== */
 :root{
-  --pink:#E5007E; --pink-600:#C60069; --pink-hero:#FF7BC9; --pink-soft:#FFE1F0;
-  --plum:#8A086E;
-  --ink:#141013; --body:#524A4F; --muted:#8B8189;
-  --canvas:#FBFAF9; --canvas-2:#F1EDEB; --line:#E4DEDB; --line-2:#EFEAE7;
+  --pink:#fe2490; --pink-dk:#d8106f;
+  --plum:#8a086e; --ink:#4c001b; --body:#6f197b;
+  --soft:#ffe1f0; --light:#ffb3ed; --lilac:#ecb8fd;
+  --yellow:#fee881; --peach:#febebe; --blush:#fec4d4;
   --ok:#0E8A5F;
-  --r:12px; --r-sm:8px;
-  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:24px; --s7:32px;
-  --s8:40px; --s9:56px; --s10:72px; --s11:96px;
-  --maxw:1120px; --gutter:20px;
+  --serif:'Instrument Serif',Georgia,serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r:20px; --r-sm:14px; --r-lg:24px;
+  --pop:10px 10px 0 var(--light);
+  --pop-sm:6px 6px 0 var(--light);
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:20px;--s6:24px;--s7:32px;
+  --s8:40px;--s9:56px;--s10:72px;--s11:96px;
+  --maxw:1200px; --gutter:20px;
 }
-@media(min-width:768px){:root{--gutter:32px}}
+@media(min-width:768px){:root{--gutter:24px}}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-body{font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--canvas);color:var(--body);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition-duration:.01ms!important}}
+body{font-family:var(--sans);background:#fff;color:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img,svg{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button,input{font:inherit;color:inherit}
-:focus-visible{outline:2.5px solid var(--pink);outline-offset:3px}
-h1,h2,h3,h4{color:var(--ink);font-weight:800;line-height:1.06;letter-spacing:-.035em;text-wrap:balance}
-h1{font-size:clamp(2rem,1.3rem + 3.2vw,3.6rem)}
-h2{font-size:clamp(1.5rem,1.1rem + 1.9vw,2.5rem)}
-h3{font-size:clamp(1rem,.95rem + .3vw,1.15rem);letter-spacing:-.02em}
+::selection{background:var(--light);color:var(--ink)}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* type */
+h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--ink);letter-spacing:-.032em;line-height:1;text-wrap:balance}
+h1{font-size:clamp(40px,4vw + 20px,74px);line-height:.96}
+h2{font-size:clamp(30px,2.6vw + 16px,52px)}
+h3{font-size:clamp(22px,1vw + 16px,30px);line-height:1.06}
+h4{font-family:var(--sans);font-weight:800;font-size:1rem;color:var(--ink);letter-spacing:-.01em}
 p{margin:0}
+.it{font-style:italic}
+.pk{color:var(--pink)}
+.kicker{font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--pink)}
+.lede{font-size:clamp(16px,.4vw + 15px,19px);line-height:1.5;color:var(--body);text-wrap:pretty}
+
+/* layout */
 .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
-.narrow{max-width:720px}
+.narrow{max-width:840px}
 section{padding-block:var(--s9)}
 @media(min-width:768px){section{padding-block:var(--s10)}}
-.eyebrow{font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--pink)}
+@media(min-width:1200px){section{padding-block:88px}}
 .center{text-align:center}
+.stack>*+*{margin-top:var(--s4)}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;font-size:1rem;padding:17px 28px;border-radius:100px;border:0;cursor:pointer;min-height:56px;letter-spacing:-.01em;transition:background-color .15s,transform .15s}
-.btn-primary{background:var(--pink);color:#fff;box-shadow:0 8px 22px -10px rgba(229,0,126,.5)}
-.btn-primary:hover{background:var(--pink-600);transform:translateY(-1px)}
-.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);min-height:48px}
-.btn-ghost:hover{border-color:var(--ink)}
-.btn-sm{padding:11px 20px;font-size:.88rem;min-height:44px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--sans);
+  font-weight:800;font-size:17px;letter-spacing:.01em;padding:15px 26px;border-radius:999px;border:0;
+  cursor:pointer;min-height:54px;text-align:center;transition:background-color .15s,transform .15s,box-shadow .15s}
+.btn-primary{background:var(--pink);color:#fff}
+.btn-primary:hover{background:var(--pink-dk);transform:translateY(-1px)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:#360013;transform:translateY(-1px)}
+.btn-out{background:#fff;color:var(--ink);border:1.5px solid var(--ink);min-height:50px}
+.btn-out:hover{background:var(--soft)}
+.btn-sm{padding:11px 20px;font-size:15px;min-height:44px}
 .btn-block{display:flex;width:100%}
-.btn-arrow{transition:transform .16s}
-.btn:hover .btn-arrow{transform:translateX(3px)}
+.arw{transition:transform .16s}
+.btn:hover .arw{transform:translateX(3px)}
 
-/* ---------- top progress + header ---------- */
-#topbar{position:fixed;top:0;left:0;right:0;height:3px;background:transparent;z-index:100}
-#topbar i{display:block;height:100%;width:0;background:var(--pink);transition:width .4s cubic-bezier(.4,0,.2,1)}
-header{position:sticky;top:0;z-index:60;background:rgba(251,250,249,.88);backdrop-filter:saturate(180%) blur(14px)}
-.hdr{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:var(--s4)}
-.brand{display:flex;align-items:center;gap:11px}
-.brand img{width:74px;height:auto}
-.brand span{font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-left:11px;border-left:1px solid var(--line)}
-@media(max-width:430px){.brand span{display:none}}
-.hdr a.skip{font-size:.8rem;font-weight:700;color:var(--muted)}
-.hdr a.skip:hover{color:var(--ink)}
-
-/* =====================================================================
-   QUIZ HERO — the whole first screen
-   ===================================================================== */
-.qhero{padding-block:var(--s8) var(--s9);min-height:calc(100svh - 64px);display:flex;flex-direction:column;justify-content:center}
-@media(min-width:900px){.qhero{padding-block:var(--s9) var(--s10)}}
-.qhero-head{max-width:660px;margin-inline:auto;text-align:center;margin-bottom:var(--s7)}
-.qhero-head .eyebrow{display:block;margin-bottom:var(--s4)}
-.qhero-head h1{margin-bottom:var(--s4)}
-.qhero-head p{font-size:clamp(.98rem,.94rem + .3vw,1.12rem);color:var(--body);max-width:48ch;margin-inline:auto}
-.qmeta{display:flex;align-items:center;justify-content:center;gap:var(--s5);margin-top:var(--s5);font-size:.76rem;font-weight:700;color:var(--muted)}
-.qmeta span{display:inline-flex;align-items:center;gap:7px}
-.qmeta i{width:5px;height:5px;border-radius:50%;background:var(--pink);display:block}
-
-/* quiz shell (markup injected by lp.js) */
-#quizMount{max-width:660px;margin-inline:auto;width:100%}
-.quiz-card{background:transparent}
-.quiz-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:10px}
-.quiz-top b{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.quiz-count{font-size:.72rem;font-weight:800;letter-spacing:.1em;color:var(--ink);font-variant-numeric:tabular-nums}
-.prog{height:2px;background:var(--line);border-radius:2px;overflow:hidden}
-.prog i{display:block;height:100%;background:var(--pink);width:0;transition:width .4s cubic-bezier(.4,0,.2,1)}
-.quiz-body{padding-top:var(--s6)}
-.q-title{font-weight:800;font-size:clamp(1.35rem,1.1rem + 1.3vw,2rem);color:var(--ink);line-height:1.16;letter-spacing:-.03em;margin-bottom:8px}
-.q-help{font-size:.88rem;color:var(--muted);margin-bottom:var(--s6)}
-.opts{display:flex;flex-direction:column;gap:10px}
-.opt{
-  display:flex;align-items:center;gap:16px;width:100%;text-align:left;
-  background:#fff;border:1.5px solid var(--line);border-radius:var(--r);
-  padding:18px 20px;font-size:1rem;font-weight:600;color:var(--ink);cursor:pointer;
-  min-height:64px;transition:border-color .14s,transform .14s,box-shadow .14s
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+@media(max-width:620px){
+  .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+    margin-inline:calc(var(--gutter)*-1);padding-inline:var(--gutter)}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{white-space:nowrap;flex:0 0 auto}
 }
-.opt:hover{border-color:var(--ink);transform:translateY(-1px);box-shadow:0 6px 18px -12px rgba(0,0,0,.35)}
-.opt i{flex:0 0 auto;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);display:block;transition:all .14s}
-.opt:hover i{border-color:var(--pink);background:var(--pink);box-shadow:inset 0 0 0 4px #fff}
-.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:var(--s5)}
-.back-btn{background:none;border:0;font-size:.84rem;font-weight:700;color:var(--muted);cursor:pointer;min-height:44px;padding:8px 2px}
-.back-btn:hover{color:var(--ink)}
-.quiz-foot{font-size:.74rem;color:var(--muted)}
+.chip{background:#fff;border:1px solid var(--light);color:var(--plum);font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px}
 
-/* result */
-.res-hero{text-align:center;padding-bottom:var(--s6)}
-.res-num{font-size:clamp(3.6rem,2.6rem + 5vw,5.6rem);font-weight:900;color:var(--pink);line-height:.95;letter-spacing:-.06em}
-.res-num small{font-size:.32em;margin-left:6px;letter-spacing:-.02em}
-.res-label{font-size:.8rem;color:var(--muted);margin-top:10px}
-.res-verdict{font-weight:800;font-size:clamp(1.2rem,1.05rem + .9vw,1.7rem);color:var(--ink);margin-top:var(--s5);line-height:1.2;letter-spacing:-.03em}
-.res-bars{margin-block:var(--s6) var(--s5)}
-.res-bar-row + .res-bar-row{margin-top:var(--s3)}
-.res-bar-row b{display:flex;justify-content:space-between;font-size:.76rem;font-weight:800;color:var(--ink);margin-bottom:7px}
-.res-bar{height:34px;border-radius:var(--r-sm);background:var(--canvas-2);overflow:hidden}
-.res-bar i{display:block;height:100%;border-radius:var(--r-sm);transition:width .9s cubic-bezier(.34,1.2,.4,1)}
-.fill-you{background:var(--pink)}
-.fill-need{background:var(--ink)}
-.res-lead{font-size:1rem;line-height:1.65;margin-bottom:var(--s5)}
-.res-gap{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:var(--s5);margin-bottom:var(--s5)}
-.res-gap h4{margin-bottom:8px;font-size:1rem}
-.res-gap p{font-size:.92rem;line-height:1.62}
-.res-gap strong{color:var(--pink);font-weight:800}
-.honest{display:flex;gap:11px;background:#FFF9E8;border:1px solid #F0DCA2;border-radius:var(--r-sm);padding:14px 16px;font-size:.82rem;color:#6B5424;line-height:1.6;margin-bottom:var(--s6)}
-.honest svg{flex:0 0 auto;margin-top:3px}
-.res-offer{background:#fff;border:1.5px solid var(--ink);border-radius:var(--r);padding:var(--s5)}
-.res-offer-grid{display:grid;grid-template-columns:110px minmax(0,1fr);gap:var(--s4);align-items:center;margin-bottom:var(--s5)}
-@media(min-width:520px){.res-offer-grid{grid-template-columns:150px minmax(0,1fr);gap:var(--s5)}}
-.res-media{position:relative;aspect-ratio:1/1;background:var(--pink-hero);border-radius:var(--r-sm);overflow:hidden}
-.res-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:7%}
-.res-meta{font-size:.8rem;color:var(--muted);margin-bottom:var(--s3)}
-.price-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.price-now{font-size:clamp(1.8rem,1.5rem + 1.2vw,2.3rem);font-weight:900;color:var(--ink);letter-spacing:-.04em;line-height:1}
-.price-was{font-size:1rem;color:var(--muted);text-decoration:line-through;font-weight:600}
-.price-save{background:var(--pink-soft);color:var(--pink);font-size:.7rem;font-weight:800;padding:5px 10px;border-radius:100px}
-.price-unit{font-size:.82rem;color:var(--muted);margin-top:6px}
-.email-box{margin-top:var(--s5);padding-top:var(--s5);border-top:1px solid var(--line)}
-.email-box h4{margin-bottom:5px;font-size:1rem}
-.email-box > p{font-size:.85rem;color:var(--muted);margin-bottom:var(--s3)}
-.email-form{display:flex;gap:9px}
-@media(max-width:560px){.email-form{flex-direction:column}}
-.email-form input{flex:1;border:1.5px solid var(--line);border-radius:100px;padding:14px 20px;min-height:52px;min-width:0;background:#fff}
-.email-form input:focus{outline:0;border-color:var(--pink)}
-.email-ok{display:none;background:#E9F8F1;border:1px solid #A9E0C8;border-radius:var(--r-sm);padding:14px 16px;font-size:.88rem;color:#0B6B4A;font-weight:700}
-.email-fine{font-size:.7rem;color:var(--muted);margin-top:9px;line-height:1.5}
+/* announcement + header */
+.ann{background:var(--ink);color:var(--soft);font-size:12.5px;font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;padding:9px var(--gutter);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ann .short{display:none}
+@media(max-width:760px){.ann .full{display:none}.ann .short{display:inline}}
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--soft)}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:62px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand img{width:76px;height:auto}
+.brand span{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--plum);
+  padding-left:10px;border-left:1px solid var(--light)}
+@media(max-width:430px){.brand span{display:none}}
+.nav{display:none;align-items:center;gap:26px;font-size:15px;font-weight:600}
+.nav a{color:var(--ink)}
+.nav a:hover{color:var(--pink)}
+@media(min-width:980px){.nav{display:flex}}
+.hdr-right{display:flex;align-items:center;gap:14px;flex:0 0 auto}
+.hdr-price{font-size:14px;font-weight:800;color:var(--ink);white-space:nowrap}
+.hdr-price s{color:var(--plum);opacity:.6;font-weight:500;margin-right:5px}
+@media(max-width:620px){.hdr-price{display:none}}
 
-/* ---------- context strip ---------- */
-.why{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
-.why-grid{display:grid;grid-template-columns:1fr;gap:var(--s6)}
-@media(min-width:820px){.why-grid{grid-template-columns:repeat(3,1fr);gap:var(--s8)}}
-.why-item b{display:block;font-size:2rem;font-weight:900;color:var(--ink);letter-spacing:-.04em;line-height:1;margin-bottom:10px}
-.why-item span{display:block;font-size:.92rem;line-height:1.6;color:var(--body)}
-.why-src{font-size:.74rem;color:var(--muted);margin-top:var(--s7);line-height:1.6;max-width:70ch}
+/* marquee */
+.mq{background:var(--pink);color:#fff;overflow:hidden;padding:13px 0}
+.mq-track{display:flex;width:max-content;animation:mq 30s linear infinite}
+.mq-track>div{display:flex;gap:40px;padding-right:40px;font-family:var(--serif);font-style:italic;
+  font-size:clamp(20px,2vw,26px);white-space:nowrap}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* ---------- product ---------- */
-.prod{display:grid;grid-template-columns:1fr;gap:var(--s7);align-items:center;max-width:1000px;margin-inline:auto}
-@media(min-width:860px){.prod{grid-template-columns:1fr 1fr;gap:var(--s9)}}
-.prod-media{position:relative;aspect-ratio:1/1;background:var(--pink-hero);border-radius:var(--r);overflow:hidden}
-.prod-media::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,rgba(255,255,255,.34),transparent 62%)}
-.prod-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:7%}
-.prod .eyebrow{display:block;margin-bottom:var(--s3)}
-.prod h2{margin-bottom:var(--s4)}
-.prod p.lede{font-size:1rem;line-height:1.65;margin-bottom:var(--s5)}
-.spec{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:var(--s6)}
-.spec div{background:var(--canvas);padding:var(--s4) var(--s3);text-align:center}
-.spec b{display:block;font-size:1.15rem;font-weight:900;color:var(--ink);letter-spacing:-.03em}
-.spec span{display:block;font-size:.66rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:3px}
-.prod .price-row{margin-bottom:6px}
-.prod .btn{margin-top:var(--s5)}
-.pay{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:var(--s4);font-size:.75rem;color:var(--muted)}
-.pay i{width:4px;height:4px;border-radius:50%;background:var(--line);display:block}
+/* product media tile */
+.tile{position:relative;border-radius:var(--r);overflow:hidden;background:var(--soft)}
+.tile::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.55),transparent 66%);pointer-events:none}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:6%}
+.tile img.cover{object-fit:cover;padding:0}
+.sticker{position:absolute;z-index:3;background:var(--yellow);color:var(--ink);font-weight:800;font-size:14px;
+  padding:11px 16px;border-radius:16px 16px 16px 4px;transform:rotate(-6deg);border:1.5px solid var(--ink)}
 
-/* ---------- ugc ---------- */
+/* stat cards */
+.stats{display:grid;grid-template-columns:1fr;gap:var(--s4)}
+@media(min-width:700px){.stats{grid-template-columns:repeat(3,1fr);gap:var(--s5)}}
+.stat{border:1.5px solid var(--light);border-radius:var(--r);padding:var(--s6)}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(44px,4vw,62px);line-height:1;color:var(--pink)}
+.stat i{display:block;font-style:normal;font-size:16px;font-weight:700;margin-top:10px;color:var(--ink)}
+.stat p{font-size:15px;line-height:1.5;margin-top:8px}
+.stat-soft{background:var(--soft)}
+.stat-plum b{color:var(--plum)}
+.stat-hi{background:var(--yellow);border-color:var(--ink)}
+.stat-hi b,.stat-hi p{color:var(--ink)}
+
+/* reviews (real UGC) */
 .ugc{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4)}
 @media(max-width:900px){
-  .ugc{display:flex;gap:var(--s3);overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(var(--gutter)*-1);padding-inline:var(--gutter);padding-bottom:var(--s3);scrollbar-width:none}
+  .ugc{display:flex;gap:var(--s3);overflow-x:auto;scroll-snap-type:x mandatory;
+    margin-inline:calc(var(--gutter)*-1);padding-inline:var(--gutter);padding-bottom:var(--s3);scrollbar-width:none}
   .ugc::-webkit-scrollbar{display:none}
-  .ugc-card{flex:0 0 76%;max-width:290px;scroll-snap-align:center}
+  .ugc-card{flex:0 0 78%;max-width:300px;scroll-snap-align:center}
 }
-.ugc-card{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
-.ugc-photo{aspect-ratio:1/1;overflow:hidden;background:var(--canvas-2)}
+.ugc-card{background:#fff;border:1.5px solid var(--ink);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.ugc-photo{aspect-ratio:1;overflow:hidden;background:var(--soft)}
 .ugc-photo img{width:100%;height:100%;object-fit:cover}
-.ugc-body{padding:var(--s4);display:flex;flex-direction:column;flex:1}
-.ugc-name{font-weight:800;color:var(--ink);font-size:.93rem}
-.stars{color:var(--pink);font-size:.85rem;letter-spacing:2px}
-.ugc-card .stars{margin:4px 0 9px}
-.ugc-quote{font-size:.85rem;line-height:1.6;flex:1}
-.ugc-prod{display:flex;align-items:center;gap:10px;margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--line-2)}
-.ugc-prod img{width:26px;height:34px;object-fit:contain}
-.ugc-prod span{font-size:.7rem;font-weight:800;color:var(--muted)}
+.ugc-body{padding:var(--s5);display:flex;flex-direction:column;flex:1}
+.ugc-name{font-weight:800;font-size:15px;color:var(--ink)}
+.stars{color:var(--pink);font-size:15px;letter-spacing:.08em}
+.ugc-card .stars{margin:5px 0 10px}
+.ugc-quote{font-size:15px;line-height:1.5;color:var(--ink);flex:1}
+.ugc-prod{display:flex;align-items:center;gap:10px;margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--soft)}
+.ugc-prod img{width:28px;height:36px;object-fit:contain}
+.ugc-prod span{font-size:12px;font-weight:800;color:var(--plum)}
+.rail-hint{display:none;text-align:center;font-size:12px;color:var(--plum);opacity:.7;margin-top:var(--s3)}
+@media(max-width:900px){.rail-hint{display:block}}
 
-/* ---------- faq ---------- */
-.faq{max-width:720px;margin-inline:auto}
-details{border-bottom:1px solid var(--line)}
-summary{padding:18px 0;font-weight:700;font-size:.98rem;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;min-height:56px}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:1.4rem;font-weight:400;color:var(--pink);transition:transform .2s}
-details[open] summary::after{transform:rotate(45deg)}
-details p{padding-bottom:20px;font-size:.9rem;line-height:1.7;max-width:66ch}
+/* nutrition */
+.nut{display:grid;grid-template-columns:1fr;gap:var(--s6)}
+@media(min-width:820px){.nut{grid-template-columns:1fr 1fr;gap:var(--s8)}}
+table{width:100%;border-collapse:collapse;font-size:16px}
+td{padding:9px 0}
+tbody tr{border-bottom:1px solid var(--soft)}
+td:first-child{color:var(--body)}
+td:last-child{text-align:right;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+tr.hl td:last-child{color:var(--pink)}
 
-/* ---------- footer ---------- */
-footer{background:var(--pink-soft);color:var(--plum);padding-block:var(--s9) calc(var(--s9) + 72px);font-size:.88rem}
+/* faq */
+.faq details{border-top:1.5px solid var(--light);padding:18px 0}
+.faq details:last-of-type{border-bottom:1.5px solid var(--light)}
+.faq summary{display:flex;align-items:center;justify-content:space-between;gap:20px;
+  font-size:clamp(17px,.5vw + 15px,20px);font-weight:700;color:var(--ink);cursor:pointer;list-style:none;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq .plus{color:var(--pink);font-size:26px;line-height:1;transition:transform .2s;flex:0 0 auto}
+.faq details[open] .plus{transform:rotate(45deg)}
+.faq details p{font-size:16px;line-height:1.55;margin-top:12px;max-width:68ch}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--soft);padding-block:var(--s8) calc(var(--s9) + 76px);font-size:14px;color:var(--plum)}
 .f-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s7) var(--s5)}
-@media(min-width:720px){.f-grid{grid-template-columns:repeat(4,1fr) 1.3fr;gap:var(--s6)}}
-footer h4{color:var(--plum);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:var(--s4)}
-.f-col a{display:block;padding-block:5px;opacity:.85;font-weight:500}
-.f-col a:hover{opacity:1;text-decoration:underline;text-underline-offset:3px}
-.f-news p{font-size:.82rem;opacity:.85;margin-bottom:var(--s3);line-height:1.55}
+@media(min-width:760px){.f-grid{grid-template-columns:repeat(4,1fr) 1.25fr;gap:var(--s6)}}
+footer h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);margin-bottom:var(--s4)}
+.f-col a{display:block;padding-block:5px;color:var(--ink);opacity:.82;font-weight:500}
+.f-col a:hover{opacity:1;color:var(--pink)}
+.f-news p{font-size:14px;line-height:1.5;margin-bottom:var(--s3)}
 .f-social{display:flex;gap:10px;margin-top:var(--s4)}
-.f-social a{width:38px;height:38px;border-radius:50%;background:rgba(138,8,110,.09);display:flex;align-items:center;justify-content:center}
-.f-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s5);margin-top:var(--s8);padding-top:var(--s6);border-top:1px solid rgba(138,8,110,.16)}
-.f-mid img{width:100px}
-.f-company{font-size:.75rem;line-height:1.7;opacity:.85;text-align:right}
-@media(max-width:720px){.f-company{text-align:left}}
-.f-bot{margin-top:var(--s6);padding-top:var(--s5);border-top:1px solid rgba(138,8,110,.16);font-size:.74rem;line-height:1.65;opacity:.78}
-.f-bot p + p{margin-top:var(--s3)}
+.f-social a{width:38px;height:38px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center}
+.f-social a:hover{background:var(--light)}
+.f-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s5);
+  margin-top:var(--s8);padding-top:var(--s6);border-top:1px solid var(--soft)}
+.f-mid img{width:100px;height:auto}
+.f-company{font-size:12.5px;line-height:1.65;text-align:right}
+@media(max-width:760px){.f-company{text-align:left}}
+.f-bot{margin-top:var(--s6);padding-top:var(--s5);border-top:1px solid var(--soft);font-size:12.5px;line-height:1.6;opacity:.85}
+.f-bot p+p{margin-top:var(--s3)}
 
-/* ---------- sticky + consent ---------- */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:var(--s3);transform:translateY(115%);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+/* sticky bar + consent */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1.5px solid var(--ink);
+  padding:11px var(--gutter) calc(11px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:var(--s3);
+  transform:translateY(115%);transition:transform .3s cubic-bezier(.4,0,.2,1);box-shadow:0 -8px 24px rgba(76,0,27,.1)}
 .sticky.on{transform:translateY(0)}
 .sticky-info{flex:1;min-width:0}
-.sticky-info b{display:block;font-size:1.02rem;font-weight:900;color:var(--ink);line-height:1.1}
-.sticky-info b s{font-size:.75rem;color:var(--muted);font-weight:500;margin-left:6px}
-.sticky-info span{font-size:.7rem;color:var(--muted);display:block}
-.consent{position:fixed;left:var(--s3);right:var(--s3);bottom:var(--s3);z-index:95;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:var(--s5);box-shadow:0 16px 40px -18px rgba(0,0,0,.32);max-width:420px;display:none}
+.sticky-info b{display:block;font-size:15px;font-weight:800;color:var(--ink);line-height:1.2}
+.sticky-info span{font-size:13px;color:var(--plum);display:block}
+.sticky-info span em{font-style:normal;font-weight:800;color:var(--pink)}
+.consent{position:fixed;left:var(--s3);right:var(--s3);bottom:var(--s3);z-index:95;background:#fff;
+  border:1.5px solid var(--ink);border-radius:var(--r);padding:var(--s5);box-shadow:var(--pop-sm);max-width:420px;display:none}
 @media(min-width:520px){.consent{left:var(--s5);right:auto;bottom:var(--s5)}}
 .consent.on{display:block}
-.consent h4{margin-bottom:6px;font-size:.95rem}
-.consent p{font-size:.8rem;line-height:1.5;margin-bottom:var(--s4)}
+.consent h4{margin-bottom:6px}
+.consent p{font-size:13.5px;line-height:1.5;margin-bottom:var(--s4)}
 .consent-btns{display:flex;gap:9px}
-.consent-btns .btn{flex:1;min-height:44px;padding:10px 12px;font-size:.85rem}
+.consent-btns .btn{flex:1;min-height:44px;padding:10px 12px;font-size:14px}
+@media(max-width:519px){
+  .consent{padding:var(--s4)}
+  .consent p{font-size:12.5px;margin-bottom:var(--s3)}
+}
+
+/* ---------- quiz (markup injected by the runtime) ---------- */
+.quiz-card{background:#fff;border-radius:var(--r-lg);padding:var(--s6) var(--s5)}
+@media(min-width:700px){.quiz-card{padding:var(--s7)}}
+.quiz-top{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);
+  font-size:13px;font-weight:700;color:var(--plum);letter-spacing:.02em}
+.quiz-count{font-variant-numeric:tabular-nums}
+.prog{height:6px;border-radius:999px;background:var(--soft);margin-top:10px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--pink);width:0;transition:width .4s cubic-bezier(.4,0,.2,1)}
+.quiz-body{margin-top:var(--s5)}
+.q-title{font-family:var(--serif);font-weight:400;font-size:clamp(26px,1.6vw + 20px,34px);line-height:1.08;
+  letter-spacing:-.02em;color:var(--ink)}
+.q-help{font-size:14.5px;color:var(--body);margin-top:8px}
+.opts{display:grid;gap:10px;margin-top:var(--s5)}
+.opt{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:#fff;
+  border:1.5px solid var(--light);border-radius:var(--r-sm);padding:15px 18px;font-size:17px;font-weight:600;
+  color:var(--ink);cursor:pointer;min-height:58px;transition:background-color .14s,border-color .14s,transform .14s}
+.opt:hover{background:var(--soft);border-color:var(--pink)}
+@media(hover:hover){.opt:hover{transform:translateX(3px)}}
+.opt i{flex:0 0 auto;width:20px;height:20px;border-radius:50%;border:1.5px solid var(--light);transition:all .14s}
+.opt:hover i{border-color:var(--pink);background:var(--pink);box-shadow:inset 0 0 0 3px #fff}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:var(--s5)}
+.back-btn{background:none;border:0;font-size:14px;font-weight:700;color:var(--plum);cursor:pointer;min-height:44px;padding:8px 2px}
+.back-btn:hover{color:var(--ink)}
+.quiz-foot{font-size:13px;color:var(--plum);opacity:.8}
+
+/* result */
+.res-grid{display:grid;grid-template-columns:1fr;gap:var(--s6);align-items:start}
+@media(min-width:720px){.res-grid{grid-template-columns:1fr 1fr;gap:var(--s7)}}
+.res-num{font-family:var(--serif);font-weight:400;font-size:clamp(64px,7vw,86px);line-height:1;color:var(--pink);margin-top:6px}
+.res-cap{font-size:15px;font-weight:700;color:var(--ink)}
+.res-scale{height:10px;border-radius:999px;background:var(--soft);margin-top:16px;overflow:hidden}
+.res-scale i{display:block;height:100%;background:var(--pink);width:0;transition:width .9s cubic-bezier(.34,1.2,.4,1)}
+.res-legend{font-size:13px;font-weight:600;color:var(--plum);margin-top:8px}
+.res-verdict{font-size:clamp(18px,.6vw + 16px,21px);line-height:1.35;color:var(--ink);font-weight:700}
+.res-advice{font-size:16px;line-height:1.55;margin-top:12px}
+.res-advice strong{color:var(--pink);font-weight:800}
+.honest{display:flex;gap:10px;background:var(--soft);border-radius:var(--r-sm);padding:14px 16px;
+  font-size:13.5px;line-height:1.5;color:var(--plum);margin-top:var(--s5)}
+.honest svg{flex:0 0 auto;margin-top:2px}
+.res-offer{margin-top:var(--s6);border:2px solid var(--ink);border-radius:var(--r);padding:var(--s5);background:#fff}
+.res-offer-grid{display:grid;grid-template-columns:104px minmax(0,1fr);gap:var(--s4);align-items:center}
+@media(min-width:520px){.res-offer-grid{grid-template-columns:140px minmax(0,1fr);gap:var(--s5)}}
+.res-offer .tile{aspect-ratio:1;border-radius:var(--r-sm)}
+.res-offer h3{font-size:clamp(20px,1vw + 15px,26px)}
+.res-meta{font-size:13.5px;color:var(--body);margin-top:4px}
+.res-price{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-top:10px}
+.res-price b{font-size:26px;font-weight:800;color:var(--pink);letter-spacing:-.02em}
+.res-price s{font-size:15px;color:var(--plum);opacity:.7}
+.res-offer .btn{margin-top:var(--s5)}
+.email-box{margin-top:var(--s5);padding-top:var(--s5);border-top:1px solid var(--soft)}
+.email-box h4{margin-bottom:5px}
+.email-box>p{font-size:14px;margin-bottom:var(--s3)}
+.email-form{display:flex;gap:9px}
+@media(max-width:560px){.email-form{flex-direction:column}}
+.email-form input{flex:1;min-width:0;border:1.5px solid var(--light);border-radius:999px;padding:14px 20px;min-height:52px;background:#fff}
+.email-form input:focus{outline:0;border-color:var(--pink)}
+.email-ok{display:none;background:#E9F8F1;border:1px solid #A9E0C8;border-radius:var(--r-sm);padding:14px 16px;font-size:14px;color:#0B6B4A;font-weight:700}
+.email-fine{font-size:11.5px;margin-top:9px;line-height:1.45;opacity:.85}
+/* quiz on the dark panel */
+.on-dark .quiz-top,.on-dark .quiz-foot{color:var(--plum)}
+
+.qhero{background:linear-gradient(180deg,var(--soft) 0%,#fff 100%);padding-block:var(--s7) var(--s9);
+  min-height:calc(100svh - 62px);display:flex;flex-direction:column;justify-content:center}
+.qhero-head{max-width:680px;margin-inline:auto;text-align:center}
+.qhero-head h1{margin-top:var(--s4)}
+.qhero-head .lede{margin-top:var(--s5);margin-inline:auto;max-width:52ch}
+.qmeta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin-top:var(--s5)}
+@media(max-width:620px){
+  .qmeta{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;
+    margin-inline:calc(var(--gutter)*-1);padding-inline:var(--gutter)}
+  .qmeta::-webkit-scrollbar{display:none}
+  .qmeta .chip{white-space:nowrap;flex:0 0 auto}
+  .qhero-head .lede{font-size:15.5px;line-height:1.45}
+}
+#quizMount{max-width:680px;margin-inline:auto;width:100%;margin-top:var(--s7)}
+.qhero .quiz-card{border:2px solid var(--ink);box-shadow:var(--pop)}
+.prod{display:grid;grid-template-columns:1fr;gap:var(--s7);align-items:center;max-width:1040px;margin-inline:auto}
+@media(min-width:880px){.prod{grid-template-columns:1fr 1fr;gap:var(--s9)}}
+.prod .tile{aspect-ratio:1;background:var(--light)}
+.prod h2{margin-top:14px}
+.prod .lede{margin-top:var(--s5)}
+.prod-price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:var(--s6)}
+.prod-price b{font-size:clamp(30px,2vw + 20px,38px);font-weight:800;color:var(--pink);letter-spacing:-.03em}
+.prod-price s{font-size:17px;color:var(--plum);opacity:.7}
+.save-tag{background:var(--yellow);border:1.5px solid var(--ink);color:var(--ink);font-size:12.5px;font-weight:800;padding:5px 11px;border-radius:999px}
+.prod .btn{margin-top:var(--s5)}
+.pay{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:var(--s4);font-size:13px;font-weight:600;color:var(--body)}
+
+.flav-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3)}
+@media(min-width:760px){.flav-grid{grid-template-columns:repeat(4,1fr);gap:var(--s5)}}
+.flav{border:1.5px solid var(--ink);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.flav-img{position:relative;aspect-ratio:1}
+.flav-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:10%}
+.flav-txt{padding:var(--s4);border-top:1.5px solid var(--ink);flex:1}
+@media(min-width:760px){.flav-txt{padding:var(--s5)}}
+.flav-txt h3{font-size:clamp(19px,1vw + 14px,26px)}
+.flav-txt p{font-size:14px;line-height:1.45;color:var(--ink);opacity:.85;margin-top:8px}
+.flav-qty{display:inline-block;margin-top:10px;background:var(--soft);color:var(--plum);font-size:11.5px;
+  font-weight:800;letter-spacing:.05em;padding:4px 11px;border-radius:999px}
 </style>
 </head>
 <body>
 
-<div id="topbar"><i id="topbarFill"></i></div>
+<div class="ann"><span class="full">Nemokamas pristatymas visoje Lietuvoje · Tiesiai iš gamyklos Panevėžyje</span><span class="short">Nemokamas pristatymas visoje Lietuvoje</span></div>
 
 <header>
   <div class="wrap hdr">
     <a class="brand" href="#top" aria-label="OMG World">
-      <img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_logo_black_3.png?width=240" alt="OMG World" width="74" height="31">
+      <img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_logo_black_3.png?width=240" alt="OMG World" width="76" height="32">
       <span>Fibre&nbsp;Soda</span>
     </a>
-    <a class="skip" href="#produktas">Praleisti testą →</a>
+    <div class="hdr-right">
+      <div class="hdr-price"><s>32,87 €</s>22,87 €</div>
+      <a href="#" class="btn btn-primary btn-sm js-buy" data-loc="header">Užsisakyti</a>
+    </div>
   </div>
 </header>
-
 <main id="top">
 
-<!-- ======================= QUIZ HERO ======================= -->
-<div class="wrap qhero">
-  <div class="qhero-head">
-    <span class="eyebrow">Skaidulų testas · 30 sekundžių</span>
-    <h1>Kiek skaidulų gauni per dieną?</h1>
-    <p>Rekomenduojama norma suaugusiajam — <b>bent 25 g</b>. Lietuvoje vidutiniškai gauname apie 15 g. Atsakyk į 6 klausimus apie įprastą dieną ir pamatyk savo skaičių.</p>
-    <div class="qmeta">
-      <span><i></i> Be registracijos</span>
-      <span><i></i> Rezultatas iš karto</span>
-    </div>
-  </div>
-
-  <div id="quizMount"></div>
-</div>
-
-<!-- ======================= WHY ======================= -->
-<section class="why">
+<section class="qhero">
   <div class="wrap">
-    <div class="why-grid">
-      <div class="why-item"><b>25 g</b><span>Tiek skaidulų per parą suaugusiajam rekomenduoja EFSA.</span></div>
-      <div class="why-item"><b>~15 g</b><span>Tiek vidutiniškai suvartojama Lietuvoje. Skirtumas — apie 10 g kasdien.</span></div>
-      <div class="why-item"><b>4 obuoliai</b><span>Maždaug tiek reikėtų suvalgyti papildomai, kad trūkumą uždengtum vien maistu. Kasdien.</span></div>
+    <div class="qhero-head">
+      <div class="kicker">Skaidulų testas · 30 sekundžių</div>
+      <h1>Kiek skaidulų <span class="it pk">gauni per dieną?</span></h1>
+      <p class="lede">Rekomenduojama norma suaugusiajam — bent 25 g. Lietuvoje vidutiniškai gauname apie 15 g. Atsakyk į 6 klausimus apie įprastą dieną ir pamatyk savo skaičių.</p>
+      <div class="qmeta">
+        <span class="chip">Be registracijos</span>
+        <span class="chip">Rezultatas iš karto</span>
+        <span class="chip">30 sekundžių</span>
+      </div>
     </div>
-    <p class="why-src">Šaltiniai: EFSA rekomenduoja suaugusiesiems bent 25 g skaidulų per parą; Europoje faktinis suvartojimas — 16–24 g. Lietuvoje nurodoma apie 15 g per parą.</p>
+    <div id="quizMount"></div>
   </div>
 </section>
 
-<!-- ======================= PRODUCT ======================= -->
-<section id="produktas">
+<div class="mq" aria-hidden="true"><div class="mq-track">
+  <div><span>so-da-licious</span><span>so better</span><span>skaidulos ten, kur jų nesitiki</span><span>sveika, bet ne šventa</span><span>so fibre loving</span></div>
+  <div><span>so-da-licious</span><span>so better</span><span>skaidulos ten, kur jų nesitiki</span><span>sveika, bet ne šventa</span><span>so fibre loving</span></div>
+</div></div>
+
+<section>
+  <div class="wrap">
+    <div style="max-width:720px">
+      <div class="kicker">Kodėl klausiame</div>
+      <h2 style="margin-top:14px">Skaidulų trūkumas — tylus ir kasdienis</h2>
+      <p class="lede" style="margin-top:18px">Jo nejauti kaip nuovargio ar galvos skausmo. Jis tiesiog yra — kiekvieną dieną, kelis dešimtmečius iš eilės.</p>
+    </div>
+    <div class="stats" style="margin-top:var(--s8)">
+      <div class="stat stat-soft"><b>25 g</b><i>Dienos norma</i><p>Tiek skaidulų per parą suaugusiajam rekomenduoja EFSA.</p></div>
+      <div class="stat stat-plum"><b>~15 g</b><i>Kiek gauname Lietuvoje</i><p>Maždaug pusė normos. Skirtumas — apie 10 g kasdien.</p></div>
+      <div class="stat stat-hi"><b>4 obuoliai</b><i>Tiek reikėtų papildomai</i><p>Kad trūkumą uždengtum vien maistu. Kasdien. Todėl dauguma to ir nepadaro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="produktas" style="background:var(--soft)">
   <div class="wrap">
     <div class="prod">
-      <div class="prod-media">
-        <img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/12-packProductImage_b4a0085b-65a3-40fd-896f-8c9be4750819.png?v=1785235809&width=900"
-             alt="OMG Fibre Soda mišrus 12 skardinių rinkinys" width="900" height="900" loading="lazy" decoding="async">
-      </div>
+      <div class="tile"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/12-packProductImage_b4a0085b-65a3-40fd-896f-8c9be4750819.png?v=1785235809&width=900" alt="OMG Fibre Soda mišrus 12 skardinių rinkinys" width="900" height="900" loading="lazy" decoding="async"></div>
       <div>
-        <span class="eyebrow">Mišrus rinkinys · 12 skardinių</span>
+        <div class="kicker">Mišrus rinkinys · 12 skardinių</div>
         <h2>3,3 g skaidulų skardinėje. Be mitybos perversmo.</h2>
-        <p class="lede">OMG Fibre Soda — gazuotas gėrimas su akacijų sakų skaidulomis ir ekologišku obuolių sidro actu. Trūkumo jis neuždengia, bet 3,3 g per dieną yra 3,3 g, kurių šiandien negauni.</p>
-        <div class="spec">
-          <div><b>3,3 g</b><span>Skaidulų</span></div>
-          <div><b>5,3 g</b><span>Cukraus</span></div>
-          <div><b>33 kcal</b><span>Skardinėje</span></div>
+        <p class="lede">Gazuotas gėrimas su akacijų sakų skaidulomis ir ekologišku obuolių sidro actu. Viso trūkumo jis neuždengia — bet 3,3 g per dieną yra 3,3 g, kurių šiandien negauni.</p>
+        <div class="chips" style="margin-top:var(--s6)">
+          <span class="chip">5,3 g cukraus</span>
+          <span class="chip">33 kcal</span>
+          <span class="chip">Be glitimo</span>
+          <span class="chip">Tinka veganams</span>
         </div>
-        <div class="price-row">
-          <span class="price-now">22,87 €</span>
-          <span class="price-was">32,87 €</span>
-          <span class="price-save">−10 €</span>
-        </div>
-        <p class="price-unit">12 skardinių × 330 ml · visi 4 skoniai · <b>1,91 €</b> už skardinę</p>
-        <a href="#" class="btn btn-primary btn-block js-buy" id="mainCta" data-loc="product">Užsisakyti — 22,87 € <span class="btn-arrow">→</span></a>
-        <div class="pay"><span>Nemokamas pristatymas</span><i></i><span>Saugus apmokėjimas per Shopify</span><i></i><span>14 dienų grąžinimas</span></div>
+        <div class="prod-price"><b>22,87 €</b><s>32,87 €</s><span class="save-tag">Sutaupai 10 €</span></div>
+        <p style="font-size:15px;margin-top:8px">12 skardinių × 330 ml · visi 4 skoniai · <b style="color:var(--ink)">1,91 €</b> už skardinę</p>
+        <a href="#" class="btn btn-primary btn-block js-buy" id="mainCta" data-loc="product">Užsisakyti — 22,87 € <span class="arw">→</span></a>
+        <div class="pay"><span>✓ Nemokamas pristatymas</span><span>✓ Saugus apmokėjimas per Shopify</span><span>✓ 14 d. grąžinimas</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ======================= UGC ======================= -->
-<section style="background:#fff;border-top:1px solid var(--line)">
+<section>
   <div class="wrap">
-    <div class="center" style="max-width:560px;margin-inline:auto;margin-bottom:var(--s8)">
-      <span class="eyebrow">Atsiliepimai</span>
-      <h2 style="margin-top:var(--s3)">4,8 iš 5</h2>
-      <p style="margin-top:var(--s3);color:var(--muted)">Iš omgworld.com parduotuvės.</p>
+    <div class="center" style="max-width:600px;margin-inline:auto">
+      <div class="kicker">Kas rinkinyje</div>
+      <h2 style="margin-top:14px">Keturi skoniai, po tris skardines</h2>
     </div>
-    <div class="ugc">
+    <div style="margin-top:var(--s8)"><div class="flav-grid">
+      <div class="flav">
+        <div class="flav-img" style="background:var(--peach)"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/HeroProductImage.png?v=1782808906&width=560" alt="OMG Fibre Soda Cherry Cola" loading="lazy" width="560" height="560" decoding="async"></div>
+        <div class="flav-txt"><h3>Cherry Cola</h3><p>Sodresnė kolos versija — ta, kurios prašo net kolos gerbėjai.</p><span class="flav-qty">3 skardinės</span></div>
+      </div>
+      <div class="flav">
+        <div class="flav-img" style="background:var(--lilac)"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/HeroProductImage_f9155dd7-caa7-41ee-9f44-1dea32e8a7df.png?v=1782809242&width=560" alt="OMG Fibre Soda Tropical" loading="lazy" width="560" height="560" decoding="async"></div>
+        <div class="flav-txt"><h3>Tropical</h3><p>Vynuogės ir ananasai. Atostogos skardinėje.</p><span class="flav-qty">3 skardinės</span></div>
+      </div>
+      <div class="flav">
+        <div class="flav-img" style="background:var(--light)"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/HeroProductImage_9e894536-290c-4836-b93c-f73d2903f61b.png?v=1782809092&width=560" alt="OMG Fibre Soda Strawberry Vanilla" loading="lazy" width="560" height="560" decoding="async"></div>
+        <div class="flav-txt"><h3>Strawberry Vanilla</h3><p>Kreminė, minkšta, saldi be pertekliaus.</p><span class="flav-qty">3 skardinės</span></div>
+      </div>
+      <div class="flav">
+        <div class="flav-img" style="background:var(--yellow)"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/HeroProductImage_50e3005d-b4b9-4f17-960c-be21c109935c.png?v=1782809278&width=560" alt="OMG Fibre Soda Yuzu" loading="lazy" width="560" height="560" decoding="async"></div>
+        <div class="flav-txt"><h3>Yuzu</h3><p>Švari citrusinė gaiva. Geriausiai atvėsinta.</p><span class="flav-qty">3 skardinės</span></div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section style="background:var(--pink)">
+  <div class="wrap">
+    <h2 style="color:#fff">Ką sako tie, kurie jau paragavo</h2>
+    <p style="color:#fff;opacity:.9;margin-top:12px;font-size:17px">4,8 iš 5 · atsiliepimai iš omgworld.com parduotuvės</p>
+    <div style="margin-top:var(--s7)"><div class="ugc">
       <article class="ugc-card">
-        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/ugc_Aleksandra.png?width=640&format=jpg" alt="Aleksandra" loading="lazy"></div>
-        <div class="ugc-body"><div class="ugc-name">Aleksandra</div><div class="stars">★★★★★</div>
+        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/ugc_Aleksandra.png?width=640&format=jpg" alt="Aleksandra su OMG Fibre Soda" loading="lazy" width="640" height="640" decoding="async"></div>
+        <div class="ugc-body">
+          <div class="ugc-name">Aleksandra</div>
+          <div class="stars" aria-label="5 iš 5">★★★★★</div>
           <p class="ugc-quote">„Bandžiau daugybę gėrimų su skaidulomis, tačiau šis — pirmasis, kurį norisi pirkti dar kartą.“</p>
-          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_soda_cherry_front.png?width=120" alt="" loading="lazy"><span>Cherry Cola</span></div></div>
+          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_soda_cherry_front.png?width=120" alt="" loading="lazy" width="28" height="36" decoding="async"><span>OMG Fibre Soda · Cherry Cola</span></div>
+        </div>
       </article>
       <article class="ugc-card">
-        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/IMG_7910.heic?width=640&format=jpg" alt="Ema" loading="lazy"></div>
-        <div class="ugc-body"><div class="ugc-name">Ema</div><div class="stars">★★★★★</div>
+        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/IMG_7910.heic?width=640&format=jpg" alt="Ema su OMG Fibre Soda" loading="lazy" width="640" height="640" decoding="async"></div>
+        <div class="ugc-body">
+          <div class="ugc-name">Ema</div>
+          <div class="stars" aria-label="5 iš 5">★★★★★</div>
           <p class="ugc-quote">„Tikrai puikus skonis! Obuolių sidro acto skonio visiškai nesijaučia. Dažniausiai jį geriu rytais.“</p>
-          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_soda_yuzu_front.png?width=120" alt="" loading="lazy"><span>Yuzu</span></div></div>
+          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_soda_yuzu_front.png?width=120" alt="" loading="lazy" width="28" height="36" decoding="async"><span>OMG Fibre Soda · Yuzu</span></div>
+        </div>
       </article>
       <article class="ugc-card">
-        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/IMG_0499.jpg?width=640&format=jpg" alt="Chelsey" loading="lazy"></div>
-        <div class="ugc-body"><div class="ugc-name">Chelsey</div><div class="stars">★★★★★</div>
+        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/IMG_0499.jpg?width=640&format=jpg" alt="Chelsey su OMG Fibre Soda" loading="lazy" width="640" height="640" decoding="async"></div>
+        <div class="ugc-body">
+          <div class="ugc-name">Chelsey</div>
+          <div class="stars" aria-label="5 iš 5">★★★★★</div>
           <p class="ugc-quote">„Visi skoniai nerealūs! Nei per saldus, nei per intensyvus — ir po jo jautiesi puikiai.“</p>
-          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_soda_yuzu_front.png?width=120" alt="" loading="lazy"><span>Yuzu</span></div></div>
+          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/omg_soda_yuzu_front.png?width=120" alt="" loading="lazy" width="28" height="36" decoding="async"><span>OMG Fibre Soda · Yuzu</span></div>
+        </div>
       </article>
       <article class="ugc-card">
-        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/ugc_Lukaa_1.png?width=640&format=jpg" alt="Luka" loading="lazy"></div>
-        <div class="ugc-body"><div class="ugc-name">Luka</div><div class="stars">★★★★☆</div>
+        <div class="ugc-photo"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/ugc_Lukaa_1.png?width=640&format=jpg" alt="Luka su OMG Fibre Soda" loading="lazy" width="640" height="640" decoding="async"></div>
+        <div class="ugc-body">
+          <div class="ugc-name">Luka</div>
+          <div class="stars" aria-label="4 iš 5">★★★★☆</div>
           <p class="ugc-quote">„Tiesą sakant, pirmiausia mane patraukė pakuotė. Labai smagi ir išskirtinė, o pats gėrimas dar geresnis.“</p>
-          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/7d784ad579a8555bf3d9fb55a071afd507b986cb.png?width=120" alt="" loading="lazy"><span>Tropical</span></div></div>
+          <div class="ugc-prod"><img src="https://cdn.shopify.com/s/files/1/1050/0030/4971/files/7d784ad579a8555bf3d9fb55a071afd507b986cb.png?width=120" alt="" loading="lazy" width="28" height="36" decoding="async"><span>OMG Fibre Soda · Tropical</span></div>
+        </div>
       </article>
+    </div>
+    <p class="rail-hint">← Braukite, kad pamatytumėte visus →</p></div>
+  </div>
+</section>
+
+<section id="duk">
+  <div class="wrap narrow">
+    <h2 style="margin-bottom:var(--s7)">Dažniausi klausimai</h2>
+    <div class="faq">
+      <details open><summary>Ar gėrimas su skaidulomis tikrai veikia?<span class="plus">+</span></summary>
+        <p>Akacijų sakų skaidula (gum acacia) yra tirpi maistinė skaidula — ta pati medžiaga, kuri naudojama maisto papilduose. Skardinėje jos yra 3,3 g. Tai nėra dienos norma ir mes to nesakome: rekomenduojama norma suaugusiajam yra bent 25 g per parą. Bet 3,3 g yra realus kiekis, o ne simbolinis.</p></details>
+      <details><summary>Ar nesukels pilvo pūtimo?<span class="plus">+</span></summary>
+        <p>Akacijų skaidula laikoma viena geriau toleruojamų — ji fermentuojasi lėčiau nei, pavyzdžiui, inulinas. Vis dėlto, jei skaidulų iki šiol vartojai mažai, pradėk nuo vienos skardinės per dieną ir gerk pakankamai vandens.</p></details>
+      <details><summary>Kiek skardinių per dieną galima?<span class="plus">+</span></summary>
+        <p>Viena ar dvi tinka daugumai. Skaidulų kiekį geriausia didinti palaipsniui.</p></details>
+      <details><summary>Ar naudojate dirbtinius saldiklius?<span class="plus">+</span></summary>
+        <p>Ne. Skardinėje yra 5,3 g cukraus — beveik dešimt kartų mažiau nei įprastoje 330 ml kolos skardinėje (~35 g).</p></details>
+      <details><summary>Ar gėrime yra glitimo ar laktozės?<span class="plus">+</span></summary>
+        <p>Nėra. Gėrimas be glitimo, be pieno produktų ir tinka veganams.</p></details>
+      <details><summary>Kodėl rinkinyje visi keturi skoniai?<span class="plus">+</span></summary>
+        <p>Nes pirmą kartą neįmanoma žinoti, kuris skonis tavo. Rinkinyje yra po 3 skardines kiekvieno — Cherry Cola, Tropical, Strawberry Vanilla ir Yuzu. Kitą kartą galėsi užsisakyti tik tą, kuris labiausiai patiko.</p></details>
+      <details><summary>Kada ir kaip gausiu užsakymą?<span class="plus">+</span></summary>
+        <p>Užsakymai renkami ir siunčiami tiesiai iš gamyklos Panevėžyje. Tikslų pristatymo terminą pamatysi atsiskaitymo lange dar prieš apmokėjimą — jis priklauso nuo pasirinkto siuntimo būdo. Pristatymas visoje Lietuvoje nemokamas, be minimalios užsakymo sumos.</p></details>
+      <details><summary>Ar galiu grąžinti, jei nepatiks?<span class="plus">+</span></summary>
+        <p>Taip — neatidarytą pakuotę gali grąžinti per 14 dienų pagal grąžinimo taisykles omgworld.com parduotuvėje.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ======================= FAQ ======================= -->
-<section>
+<section style="background:var(--ink);text-align:center">
   <div class="wrap narrow">
-    <div class="center" style="margin-bottom:var(--s7)">
-      <span class="eyebrow">DUK</span>
-      <h2 style="margin-top:var(--s3)">Prieš užsakant</h2>
-    </div>
-    <div class="faq">
-      <details open><summary>Kaip skaičiuojamas testo rezultatas?</summary><p>Pagal tavo atsakymus sudedami vidutiniai atitinkamų produktų grupių skaidulų kiekiai. Tai apytikslis įvertinimas, o ne mitybos analizė — bet jis pakankamai tikslus, kad parodytų, ar esi arti 25 g normos, ar toli nuo jos.</p></details>
-      <details><summary>Ar gėrimas su skaidulomis tikrai veikia?</summary><p>Akacijų sakų skaidula (gum acacia) yra tirpi maistinė skaidula — ta pati medžiaga, kuri naudojama maisto papilduose. Skardinėje jos yra 3,3 g. Tai nėra dienos norma ir mes to nesakome: rekomenduojama norma suaugusiajam yra bent 25 g per parą.</p></details>
-      <details><summary>Ar nesukels pilvo pūtimo?</summary><p>Akacijų skaidula laikoma viena geriau toleruojamų — ji fermentuojasi lėčiau nei, pavyzdžiui, inulinas. Vis dėlto, jei skaidulų iki šiol vartojai mažai, pradėk nuo vienos skardinės per dieną ir gerk pakankamai vandens.</p></details>
-      <details><summary>Kodėl rinkinyje visi keturi skoniai?</summary><p>Nes pirmą kartą neįmanoma žinoti, kuris skonis tavo. Rinkinyje yra po 3 skardines kiekvieno — Cherry Cola, Tropical, Strawberry Vanilla ir Yuzu.</p></details>
-      <details><summary>Kaip greitai gausiu užsakymą?</summary><p>Užsakymai renkami ir siunčiami tiesiai iš gamyklos Panevėžyje. Tikslų pristatymo terminą pamatysi atsiskaitymo lange dar prieš apmokėjimą. Pristatymas visoje Lietuvoje nemokamas.</p></details>
-      <details><summary>Kas yra OMG?</summary><p>OMG — lietuviško gėrimų prekės ženklo, žinomo dėl OMG Bubble Tea, funkcinių gėrimų linija. Gėrimai gaminami Lietuvoje, gamykloje Panevėžyje, ir sertifikuoti kaip be glitimo bei tinkami veganams.</p></details>
-    </div>
+    <h2 style="color:#fff;font-size:clamp(36px,3.4vw + 20px,64px)">Sveika, bet <span class="it pk">niekada ne šventa</span></h2>
+    <p style="font-size:19px;line-height:1.5;color:var(--light);margin:18px auto 0;max-width:560px">Mišrus 12 skardinių rinkinys — keturi skoniai, 22,87 € su nemokamu pristatymu.</p>
+    <a href="#" class="btn btn-primary js-buy" style="margin-top:var(--s7)" data-loc="final">Užsisakyti rinkinį <span class="arw">→</span></a>
+    <div style="font-size:14px;color:var(--light);margin-top:14px">Sutaupai 10 € · 14 dienų grąžinimas</div>
   </div>
 </section>
 
@@ -393,11 +540,11 @@ footer h4{color:var(--plum);font-size:.68rem;letter-spacing:.14em;text-transform
         <a href="https://omgworld.com/pages/refunds" target="_blank" rel="noopener">Grąžinimai</a></div>
       <div class="f-news"><h4>Susisiek</h4>
         <p>Klausimai apie užsakymą, pristatymą ar didmeną.</p>
-        <p><a href="tel:+37065238011" style="font-weight:800">+370 652 38011</a></p>
+        <p><a href="tel:+37065238011" style="font-weight:800;color:var(--ink)">+370 652 38011</a></p>
         <div class="f-social">
-          <a href="https://www.instagram.com/officialomgworld/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#8A086E" stroke-width="1.9"/><circle cx="12" cy="12" r="4" stroke="#8A086E" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.2" fill="#8A086E"/></svg></a>
-          <a href="https://www.tiktok.com/@officialomgworld" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3v11.2a3.3 3.3 0 11-2.6-3.2" stroke="#8A086E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 5.2c.7 1.9 2.3 3.1 4.4 3.3" stroke="#8A086E" stroke-width="1.9" stroke-linecap="round"/></svg></a>
-          <a href="https://www.youtube.com/@officialomgworld" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2.6" y="5.6" width="18.8" height="12.8" rx="4" stroke="#8A086E" stroke-width="1.9"/><path d="M10.4 9.4l5 2.6-5 2.6z" fill="#8A086E"/></svg></a>
+          <a href="https://www.instagram.com/officialomgworld/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#8a086e" stroke-width="1.9"/><circle cx="12" cy="12" r="4" stroke="#8a086e" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.2" fill="#8a086e"/></svg></a>
+          <a href="https://www.tiktok.com/@officialomgworld" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3v11.2a3.3 3.3 0 11-2.6-3.2" stroke="#8a086e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 5.2c.7 1.9 2.3 3.1 4.4 3.3" stroke="#8a086e" stroke-width="1.9" stroke-linecap="round"/></svg></a>
+          <a href="https://www.youtube.com/@officialomgworld" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2.6" y="5.6" width="18.8" height="12.8" rx="4" stroke="#8a086e" stroke-width="1.9"/><path d="M10.4 9.4l5 2.6-5 2.6z" fill="#8a086e"/></svg></a>
         </div>
       </div>
     </div>
@@ -406,14 +553,17 @@ footer h4{color:var(--plum);font-size:.68rem;letter-spacing:.14em;text-transform
       <div class="f-company">UAB „OMG WORLD“<br>Ramygalos g. 149G, LT-36255 Panevėžys<br>Įmonės kodas 305971338 · PVM kodas LT100014863412</div>
     </div>
     <div class="f-bot">
-      <p>OMG Fibre Soda yra maisto produktas, o ne vaistas, ir nepakeičia visavertės bei subalansuotos mitybos. Teiginiai „daug skaidulų“, „mažai cukraus“ ir „mažai kalorijų“ atitinka Reglamento (EB) Nr. 1924/2006 sąlygas.</p>
+      <p>OMG Fibre Soda yra maisto produktas, o ne vaistas, ir nepakeičia visavertės bei subalansuotos mitybos. Nurodyta 25 g skaidulų per parą — EFSA rekomendacija suaugusiesiems.</p>
       <p>© 2026 OMG WORLD. Visos teisės saugomos.</p>
     </div>
   </div>
 </footer>
 
 <div class="sticky" id="sticky">
-  <div class="sticky-info"><b>22,87 € <s>32,87 €</s></b><span>12 skardinių · nemokamas pristatymas</span></div>
+  <div class="sticky-info">
+    <b>Mišrus 12 skardinių rinkinys</b>
+    <span><em>22,87 €</em> · nemokamas pristatymas</span>
+  </div>
   <a href="#" class="btn btn-primary btn-sm js-buy" data-loc="sticky">Užsisakyti →</a>
 </div>
 
@@ -421,47 +571,24 @@ footer h4{color:var(--plum);font-size:.68rem;letter-spacing:.14em;text-transform
   <h4>Slapukai</h4>
   <p>Naudojame analitikos ir rinkodaros slapukus. Be tavo sutikimo jie neįjungiami.</p>
   <div class="consent-btns">
-    <button class="btn btn-ghost" id="cDecline">Nesutinku</button>
+    <button class="btn btn-out" id="cDecline">Nesutinku</button>
     <button class="btn btn-primary" id="cAccept">Sutinku</button>
   </div>
 </div>
 
 <iframe name="nl_sink" style="display:none" title="hidden" aria-hidden="true"></iframe>
-
 <script>
-var LP_VARIANT = 'B';
-var PACK_IMG = 'https://cdn.shopify.com/s/files/1/1050/0030/4971/files/12-packProductImage_b4a0085b-65a3-40fd-896f-8c9be4750819.png?v=1785235809&width=520';
-</script>
-<script>
-/* =====================================================================
-   OMG Fibre Soda LT — shared landing page runtime (variants B and C)
-   Expects the page to define, before loading this file:
-     LP_VARIANT  'B' | 'C'
-     PACK_IMG    product image URL used in the quiz result
-   Optional DOM hooks:
-     #quizMount  container the quiz is rendered into
-     #sticky #consent #cAccept #cDecline
-   ===================================================================== */
 (function(){
 'use strict';
-
-var VARIANT = (typeof LP_VARIANT !== 'undefined') ? LP_VARIANT : 'X';
-var PACK    = (typeof PACK_IMG !== 'undefined') ? PACK_IMG : '';
-
+var VARIANT = 'B';
+var PACK = 'https://cdn.shopify.com/s/files/1/1050/0030/4971/files/12-packProductImage_b4a0085b-65a3-40fd-896f-8c9be4750819.png?v=1785235809&width=520';
 var CFG = {
-  shop:        'https://omgworld.com',
-  variantId:   '57963807605067',   // Fibre Soda Variety Pack — x 12 pack
-  qty:         1,
-  discount:    'OMGLT10',
-  locale:      'lt',
-  price:       22.87,
-  currency:    'EUR',
-  pixelId:     '1031494262801665', // Meta Pixel — OMG WORLD
-  contentId:   'variety-fibre-soda-pack',
-  contentName: 'OMG Fibre Soda Variety Pack 12'
+  shop:'https://omgworld.com', variantId:'57963807605067', qty:1,
+  discount:'OMGLT10', locale:'lt', price:22.87, currency:'EUR',
+  pixelId:'1031494262801665',
+  contentId:'variety-fibre-soda-pack', contentName:'OMG Fibre Soda Variety Pack 12'
 };
 
-/* ---------- checkout permalink, forwards ad click params ---------- */
 function checkoutUrl(){
   var u = new URL(CFG.shop + '/cart/' + CFG.variantId + ':' + CFG.qty);
   u.searchParams.set('discount', CFG.discount);
@@ -472,22 +599,15 @@ function checkoutUrl(){
   return u.toString();
 }
 
-/* ---------- consent-gated tracking ---------- */
-var CONSENT_KEY = 'omg_consent_v1';
-var consent = null;
-try { consent = localStorage.getItem(CONSENT_KEY); } catch(e){}
-var queued = [];
+var CONSENT_KEY='omg_consent_v1', consent=null, queued=[];
+try{ consent = localStorage.getItem(CONSENT_KEY); }catch(e){}
 
 function track(name, params, custom){
-  params = Object.assign({ lp_variant: VARIANT }, params || {});
-  if (window.fbq && consent === 'yes') {
-    window.fbq(custom ? 'trackCustom' : 'track', name, params);
-  } else if (consent !== 'no') {
-    queued.push([name, params, !!custom]);
-  }
+  params = Object.assign({lp_variant:VARIANT}, params||{});
+  if (window.fbq && consent==='yes') window.fbq(custom?'trackCustom':'track', name, params);
+  else if (consent!=='no') queued.push([name,params,!!custom]);
   if (window.dataLayer) window.dataLayer.push(Object.assign({event:name}, params));
 }
-
 function loadPixel(){
   if (window.fbq) return;
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -496,199 +616,155 @@ function loadPixel(){
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
   (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', CFG.pixelId);
-  fbq('track', 'PageView', { lp_variant: VARIANT });
-  fbq('track', 'ViewContent', {
-    content_ids:[CFG.contentId], content_type:'product', content_name:CFG.contentName,
-    value:CFG.price, currency:CFG.currency, lp_variant:VARIANT
-  });
+  fbq('track','PageView',{lp_variant:VARIANT});
+  fbq('track','ViewContent',{content_ids:[CFG.contentId],content_type:'product',
+    content_name:CFG.contentName,value:CFG.price,currency:CFG.currency,lp_variant:VARIANT});
   queued.forEach(function(q){ fbq(q[2]?'trackCustom':'track', q[0], q[1]); });
-  queued = [];
+  queued=[];
 }
 
-var consentEl = document.getElementById('consent');
-var stickyEl  = document.getElementById('sticky');
-var consentOpen = false;
+var consentEl=document.getElementById('consent'), stickyEl=document.getElementById('sticky'), consentOpen=false;
+if (consent==='yes') loadPixel();
+else if (consent!=='no' && consentEl) setTimeout(function(){consentOpen=true;consentEl.classList.add('on');},2600);
+function closeConsent(){consentOpen=false;if(consentEl)consentEl.classList.remove('on');}
+var acc=document.getElementById('cAccept'), dec=document.getElementById('cDecline');
+if(acc) acc.onclick=function(){consent='yes';try{localStorage.setItem(CONSENT_KEY,'yes');}catch(e){}closeConsent();loadPixel();};
+if(dec) dec.onclick=function(){consent='no';try{localStorage.setItem(CONSENT_KEY,'no');}catch(e){}closeConsent();queued=[];};
 
-if (consent === 'yes') { loadPixel(); }
-else if (consent !== 'no' && consentEl) {
-  setTimeout(function(){ consentOpen = true; consentEl.classList.add('on'); }, 2600);
-}
-function closeConsent(){ consentOpen = false; if (consentEl) consentEl.classList.remove('on'); }
-
-var acc = document.getElementById('cAccept'), dec = document.getElementById('cDecline');
-if (acc) acc.onclick = function(){
-  consent='yes'; try{localStorage.setItem(CONSENT_KEY,'yes');}catch(e){}
-  closeConsent(); loadPixel();
-};
-if (dec) dec.onclick = function(){
-  consent='no'; try{localStorage.setItem(CONSENT_KEY,'no');}catch(e){}
-  closeConsent(); queued=[];
-};
-
-/* ---------- buy buttons ---------- */
-function bindBuy(scope, forcedLoc){
+function bindBuy(scope, forced){
   scope.querySelectorAll('.js-buy').forEach(function(el){
     if (el.dataset.bound) return;
-    el.dataset.bound = '1';
+    el.dataset.bound='1';
     el.setAttribute('href', checkoutUrl());
     el.addEventListener('click', function(e){
       e.preventDefault();
-      var href = checkoutUrl();
-      var loc = forcedLoc || el.dataset.loc || 'unknown';
-      track('AddToCart', {
-        content_ids:[CFG.contentId], content_type:'product', content_name:CFG.contentName,
-        value:CFG.price, currency:CFG.currency, cta_location:loc
-      });
-      track('LP_CheckoutClick', { cta_location:loc, value:CFG.price, currency:CFG.currency }, true);
-      setTimeout(function(){ location.href = href; }, 180);
+      var href=checkoutUrl(), loc=forced||el.dataset.loc||'unknown';
+      track('AddToCart',{content_ids:[CFG.contentId],content_type:'product',content_name:CFG.contentName,
+        value:CFG.price,currency:CFG.currency,cta_location:loc});
+      track('LP_CheckoutClick',{cta_location:loc,value:CFG.price,currency:CFG.currency},true);
+      setTimeout(function(){ location.href=href; },180);
     });
   });
 }
 bindBuy(document);
 
-/* ---------- sticky bar ---------- */
-var anchor = document.getElementById('mainCta') || document.querySelector('.js-buy[data-loc="pdp"]') || document.querySelector('.js-buy');
+var anchor = document.getElementById('mainCta');
 if (stickyEl && anchor && 'IntersectionObserver' in window){
-  // show the bar only once the main CTA has scrolled ABOVE the viewport —
-  // not merely because it is further down the page and not yet reached
-  new IntersectionObserver(function(entries){
-    var e = entries[0];
-    var scrolledPast = !e.isIntersecting && e.boundingClientRect.bottom < 0;
-    stickyEl.classList.toggle('on', scrolledPast && !consentOpen);
-  }, {rootMargin:'-70px 0px 0px 0px', threshold:0}).observe(anchor);
+  new IntersectionObserver(function(en){
+    var e=en[0];
+    stickyEl.classList.toggle('on', !e.isIntersecting && e.boundingClientRect.bottom < 0 && !consentOpen);
+  },{rootMargin:'-70px 0px 0px 0px',threshold:0}).observe(anchor);
 }
 
-/* ---------- quiz ---------- */
+/* ---------------- quiz ---------------- */
 var TARGET = 25;
 var QUESTIONS = [
-  { q:'Kiek porcijų daržovių suvalgai per įprastą dieną?',
-    h:'Viena porcija ≈ sauja arba vidutinio dydžio pomidoras.',
-    a:[['Beveik nevalgau',0.4],['1–2 porcijas',2.4],['3–4 porcijas',4.6],['5 ir daugiau',7.0]] },
-  { q:'O vaisių ar uogų?',
-    h:'Įskaitant bananą prie pusryčių ar saują uogų.',
-    a:[['Nevalgau',0],['1 per dieną',2.4],['2 per dieną',4.4],['3 ir daugiau',6.4]] },
-  { q:'Kokią duoną valgai dažniausiai?',
-    h:'Pasirink tą, kuri būna namuose.',
-    a:[['Beveik nevalgau duonos',0.6],['Baltą',1.5],['Mišrią / ruginę',3.2],['Viso grūdo',5.8]] },
-  { q:'Ar rytais valgai košę arba dribsnius?',
-    h:'Avižinė košė, musli, grūdiniai dribsniai.',
-    a:[['Kasdien',4.0],['Kelis kartus per savaitę',2.0],['Retai',0.8],['Niekada',0]] },
-  { q:'Kaip dažnai valgai ankštinius?',
-    h:'Pupelės, avinžirniai, lęšiai, žirniai.',
-    a:[['Kelis kartus per savaitę',3.4],['Maždaug kartą per savaitę',1.5],['Rečiau nei kartą per savaitę',0.5],['Niekada',0]] },
-  { q:'O riešutus ar sėklas?',
-    h:'Sauja riešutų, sėklos ant salotų ar košės.',
-    a:[['Beveik kasdien',2.4],['Kartais',1.0],['Beveik niekada',0]] }
+  {q:'Kiek porcijų daržovių suvalgai per įprastą dieną?',h:'Viena porcija ≈ sauja arba vidutinio dydžio pomidoras.',
+   a:[['Beveik nevalgau',0.4],['1–2 porcijas',2.4],['3–4 porcijas',4.6],['5 ir daugiau',7.0]]},
+  {q:'O vaisių ar uogų?',h:'Įskaitant bananą prie pusryčių ar saują uogų.',
+   a:[['Nevalgau',0],['1 per dieną',2.4],['2 per dieną',4.4],['3 ir daugiau',6.4]]},
+  {q:'Kokią duoną valgai dažniausiai?',h:'Pasirink tą, kuri būna namuose.',
+   a:[['Beveik nevalgau duonos',0.6],['Baltą',1.5],['Mišrią / ruginę',3.2],['Viso grūdo',5.8]]},
+  {q:'Ar rytais valgai košę arba dribsnius?',h:'Avižinė košė, musli, grūdiniai dribsniai.',
+   a:[['Kasdien',4.0],['Kelis kartus per savaitę',2.0],['Retai',0.8],['Niekada',0]]},
+  {q:'Kaip dažnai valgai ankštinius?',h:'Pupelės, avinžirniai, lęšiai, žirniai.',
+   a:[['Kelis kartus per savaitę',3.4],['Maždaug kartą per savaitę',1.5],['Rečiau nei kartą per savaitę',0.5],['Niekada',0]]},
+  {q:'O riešutus ar sėklas?',h:'Sauja riešutų, sėklos ant salotų ar košės.',
+   a:[['Beveik kasdien',2.4],['Kartais',1.0],['Beveik niekada',0]]}
 ];
 
 var mount = document.getElementById('quizMount');
 if (mount){
   mount.innerHTML =
     '<div class="quiz-card">' +
-      '<div class="quiz-top"><b>Skaidulų testas</b><span class="quiz-count" id="qCount">1 / ' + QUESTIONS.length + '</span></div>' +
+      '<div class="quiz-top"><span>Skaidulų testas</span><span class="quiz-count" id="qCount">1 / '+QUESTIONS.length+'</span></div>' +
       '<div class="prog"><i id="qProg"></i></div>' +
       '<div class="quiz-body" id="qBody"></div>' +
     '</div>';
 }
-
-var qBody = document.getElementById('qBody');
-var prog  = document.getElementById('qProg');
-var count = document.getElementById('qCount');
-
-var qi = 0, answers = [], started = false;
-
-function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
-  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+var qBody=document.getElementById('qBody'), prog=document.getElementById('qProg'), count=document.getElementById('qCount');
+var qi=0, answers=[], started=false;
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 
 function renderQ(){
-  if (!qBody) return;
-  var Q = QUESTIONS[qi];
-  count.textContent = (qi+1) + ' / ' + QUESTIONS.length;
-  prog.style.width = (qi / QUESTIONS.length * 100) + '%';
-  var html = '<div class="q-title">' + esc(Q.q) + '</div><p class="q-help">' + esc(Q.h) + '</p><div class="opts">';
-  Q.a.forEach(function(opt, i){
-    html += '<button class="opt" data-i="'+i+'"><i></i><span>'+esc(opt[0])+'</span></button>';
-  });
-  html += '</div><div class="quiz-nav">';
-  html += qi > 0 ? '<button class="back-btn" id="qBack">← Atgal</button>' : '<span></span>';
-  html += '<span class="quiz-foot">Be registracijos</span></div>';
-  qBody.innerHTML = html;
-
+  if(!qBody) return;
+  var Q=QUESTIONS[qi];
+  count.textContent=(qi+1)+' / '+QUESTIONS.length;
+  prog.style.width=(qi/QUESTIONS.length*100)+'%';
+  var h='<div class="q-title">'+esc(Q.q)+'</div><p class="q-help">'+esc(Q.h)+'</p><div class="opts">';
+  Q.a.forEach(function(o,i){ h+='<button class="opt" data-i="'+i+'"><i></i><span>'+esc(o[0])+'</span></button>'; });
+  h+='</div><div class="quiz-nav">'+(qi>0?'<button class="back-btn" id="qBack">← Atgal</button>':'<span></span>')+
+     '<span class="quiz-foot">Be registracijos</span></div>';
+  qBody.innerHTML=h;
   qBody.querySelectorAll('.opt').forEach(function(b){
-    b.onclick = function(){
-      if (!started){ started = true; track('LP_QuizStart', {}, true); }
-      answers[qi] = QUESTIONS[qi].a[+b.dataset.i][1];
+    b.onclick=function(){
+      if(!started){started=true;track('LP_QuizStart',{},true);}
+      answers[qi]=QUESTIONS[qi].a[+b.dataset.i][1];
       qi++;
-      if (qi < QUESTIONS.length) renderQ(); else renderResult();
+      if(qi<QUESTIONS.length) renderQ(); else renderResult();
     };
   });
-  var back = document.getElementById('qBack');
-  if (back) back.onclick = function(){ qi--; renderQ(); };
+  var bk=document.getElementById('qBack');
+  if(bk) bk.onclick=function(){qi--;renderQ();};
 }
 
 function renderResult(){
-  var score = answers.reduce(function(a,b){ return a+b; }, 0);
-  var g = Math.round(score);
-  var gap = Math.max(0, TARGET - score);
-  var gapR = Math.round(gap);
-  var cans = gap > 0 ? (gap/3.3) : 0;
-  var pctOfGap = gap > 0 ? Math.round(3.3/gap*100) : 0;
-  var pctOfTarget = Math.min(100, Math.round(score/TARGET*100));
+  var score=answers.reduce(function(a,b){return a+b;},0);
+  var g=Math.round(score), gap=Math.max(0,TARGET-score), gapR=Math.round(gap);
+  var cans=gap>0?(gap/3.3):0, pctGap=gap>0?Math.round(3.3/gap*100):0;
+  var pct=Math.min(100,Math.round(score/TARGET*100));
+  var verdict, advice;
+  if(score<13){ verdict='Skaidulų gauni gerokai per mažai.';
+    advice='Tavo rezultatas — žemiau Lietuvos vidurkio (~15 g). Iki rekomenduojamos normos trūksta apie <strong>'+gapR+' g per dieną</strong>.'; }
+  else if(score<20){ verdict='Gauni mažiau, nei reikia — kaip ir dauguma.';
+    advice='Tavo rezultatas panašus į Lietuvos vidurkį. Iki rekomenduojamos normos trūksta apie <strong>'+gapR+' g per dieną</strong>.'; }
+  else if(score<TARGET){ verdict='Beveik pasieki normą.';
+    advice='Tavo mityba jau geresnė nei vidutinė. Iki '+TARGET+' g trūksta apie <strong>'+gapR+' g per dieną</strong> — tai visai nedaug.'; }
+  else { verdict='Normą pasieki. Retas atvejis.';
+    advice='Tavo skaičiuojamas suvartojimas siekia rekomenduojamą '+TARGET+' g normą. Sveikiname — tai daro mažuma.'; }
 
-  var verdict, lead;
-  if (score < 13){
-    verdict = 'Skaidulų gauni gerokai per mažai.';
-    lead = 'Tavo rezultatas — žemiau Lietuvos vidurkio (~15 g). Iki rekomenduojamos normos trūksta apie <strong>' + gapR + ' g per dieną</strong>.';
-  } else if (score < 20){
-    verdict = 'Gauni mažiau, nei reikia — kaip ir dauguma.';
-    lead = 'Tavo rezultatas panašus į Lietuvos vidurkį. Iki rekomenduojamos normos trūksta apie <strong>' + gapR + ' g per dieną</strong>.';
-  } else if (score < TARGET){
-    verdict = 'Beveik pasieki normą.';
-    lead = 'Tavo mityba jau geresnė nei vidutinė. Iki 25 g trūksta apie <strong>' + gapR + ' g per dieną</strong> — tai visai nedaug.';
-  } else {
-    verdict = 'Normą pasieki. Retas atvejis.';
-    lead = 'Tavo skaičiuojamas suvartojimas siekia rekomenduojamą 25 g normą. Sveikiname — tai daro mažuma.';
-  }
-
-  var gapBlock = gap > 0
-    ? '<div class="res-gap"><h4>Ką čia gali padaryti OMG Fibre Soda</h4><p>Vienoje skardinėje yra <strong>3,3 g skaidulų</strong> — tai apie <strong>' + pctOfGap + '&nbsp;%</strong> tavo dienos trūkumo. Visą trūkumą uždengtų maždaug ' + (cans<1.2 ? 'viena' : Math.round(cans)) + ' skardinė' + (cans<1.2?'':'s') + ', bet mes to nesiūlome — skaidulų geriausia gauti iš maisto.</p></div>'
-    : '<div class="res-gap"><h4>Kam tada OMG Fibre Soda?</h4><p>Kaip pakaitalas saldiems gėrimams. Įprastoje 330 ml kolos skardinėje — apie <strong>35 g cukraus</strong> ir ~140 kcal. Čia — 5,3 g ir 33 kcal, dar ir su 3,3 g skaidulų.</p></div>';
+  var can = gap>0
+    ? 'Vienoje skardinėje yra <strong>3,3 g skaidulų</strong> — apie <strong>'+pctGap+'&nbsp;%</strong> tavo dienos trūkumo. Visą trūkumą uždengtų maždaug '+(cans<1.2?'viena':Math.round(cans))+' skardinė'+(cans<1.2?'':'s')+', bet mes to nesiūlome — skaidulų geriausia gauti iš maisto.'
+    : 'Kaip pakaitalas saldiems gėrimams: įprastoje 330 ml kolos skardinėje — apie <strong>35 g cukraus</strong> ir ~140 kcal. Čia — 5,3 g ir 33 kcal, dar ir su 3,3 g skaidulų.';
 
   qBody.innerHTML =
-    '<div class="res-hero">' +
-      '<div class="res-num">' + g + '<small>g</small></div>' +
-      '<div class="res-label">apytikslis skaidulų kiekis per dieną</div>' +
-      '<div class="res-verdict">' + verdict + '</div>' +
-    '</div>' +
-    '<div class="res-bars">' +
-      '<div class="res-bar-row"><b><span>Tavo rezultatas</span><span>' + g + ' g</span></b><div class="res-bar"><i class="fill-you" style="width:0"></i></div></div>' +
-      '<div class="res-bar-row"><b><span>Rekomenduojama norma</span><span>25 g</span></b><div class="res-bar"><i class="fill-need" style="width:100%"></i></div></div>' +
-    '</div>' +
-    '<p class="res-lead">' + lead + '</p>' +
-    gapBlock +
-    '<div class="honest">' +
-      '<svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8.2" stroke="#B08B2E" stroke-width="1.7"/><path d="M10 6v5M10 13.6v.2" stroke="#B08B2E" stroke-width="2" stroke-linecap="round"/></svg>' +
-      '<span>Tai apytikslis įvertinimas pagal tavo atsakymus, o ne mitybos analizė. Skaičiavimas remiasi vidutiniais produktų skaidulų kiekiais ir EFSA rekomendacija (25 g per parą suaugusiajam).</span>' +
+    '<div class="res-grid">' +
+      '<div>' +
+        '<div class="kicker">Tavo rezultatas</div>' +
+        '<div class="res-num">'+g+' g</div>' +
+        '<div class="res-cap">skaidulų per dieną (apytiksliai)</div>' +
+        '<div class="res-scale"><i id="resFill"></i></div>' +
+        '<div class="res-legend">0 g — '+TARGET+' g dienos norma</div>' +
+      '</div>' +
+      '<div>' +
+        '<p class="res-verdict">'+verdict+'</p>' +
+        '<p class="res-advice">'+advice+'</p>' +
+        '<p class="res-advice">'+can+'</p>' +
+        '<div class="honest">' +
+          '<svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8.2" stroke="#8a086e" stroke-width="1.6"/><path d="M10 6v5M10 13.6v.2" stroke="#8a086e" stroke-width="2" stroke-linecap="round"/></svg>' +
+          '<span>Apytikslis įvertinimas pagal tavo atsakymus, o ne mitybos analizė. Remiamasi vidutiniais produktų skaidulų kiekiais ir EFSA rekomendacija ('+TARGET+' g per parą suaugusiajam).</span>' +
+        '</div>' +
+      '</div>' +
     '</div>' +
     '<div class="res-offer">' +
       '<div class="res-offer-grid">' +
-        '<div class="res-media"><img src="' + PACK + '" alt="OMG Fibre Soda mišrus 12 skardinių rinkinys" loading="lazy" width="520" height="520" decoding="async"></div>' +
+        '<div class="tile"><img src="'+PACK+'" alt="OMG Fibre Soda mišrus 12 skardinių rinkinys" loading="lazy" width="520" height="520" decoding="async"></div>' +
         '<div>' +
           '<h3>Mišrus rinkinys — visi 4 skoniai</h3>' +
           '<p class="res-meta">12 skardinių × 330 ml · 39,6 g skaidulų iš viso</p>' +
-          '<div class="price-row"><span class="price-now">22,87 €</span><span class="price-was">32,87 €</span><span class="price-save">−10 €</span></div>' +
-          '<p class="price-unit">1,91 € už skardinę · nemokamas pristatymas</p>' +
+          '<div class="res-price"><b>22,87 €</b><s>32,87 €</s></div>' +
+          '<p class="res-meta">1,91 € už skardinę · nemokamas pristatymas</p>' +
         '</div>' +
       '</div>' +
-      '<a href="#" class="btn btn-primary btn-block js-buy" data-loc="quiz">Užsisakyti — 22,87 € <span class="btn-arrow">→</span></a>' +
+      '<a href="#" class="btn btn-primary btn-block js-buy" data-loc="quiz">Užsisakyti — 22,87 € <span class="arw">→</span></a>' +
     '</div>' +
     '<div class="email-box">' +
       '<h4>Nori pirma pagalvoti?</h4>' +
       '<p>Atsiųsime tavo rezultatą ir 5 paprastus būdus gauti daugiau skaidulų iš įprasto maisto. Vieną laišką, be spamo.</p>' +
-      '<form class="email-form" id="nlForm" action="' + CFG.shop + '/contact" method="post" target="nl_sink">' +
+      '<form class="email-form" id="nlForm" action="'+CFG.shop+'/contact" method="post" target="nl_sink">' +
         '<input type="hidden" name="form_type" value="customer">' +
         '<input type="hidden" name="utf8" value="✓">' +
-        '<input type="hidden" name="contact[tags]" value="lp-fibre-quiz,lt-launch,variant-' + VARIANT + '">' +
+        '<input type="hidden" name="contact[tags]" value="lp-fibre-quiz,lt-launch,variant-'+VARIANT+'">' +
         '<input type="email" name="contact[email]" placeholder="tavo@pastas.lt" required autocomplete="email" aria-label="El. paštas">' +
         '<button type="submit" class="btn btn-primary">Atsiųsti</button>' +
       '</form>' +
@@ -696,55 +772,30 @@ function renderResult(){
       '<p class="email-fine">Pateikdamas el. paštą sutinki gauti OMG naujienlaiškį. Atsisakyti gali bet kada.</p>' +
     '</div>';
 
-  prog.style.width = '100%';
-  count.textContent = 'Rezultatas';
-
-  requestAnimationFrame(function(){
-    var f = qBody.querySelector('.fill-you');
-    if (f) f.style.width = pctOfTarget + '%';
-  });
-
-  track('LP_QuizComplete', { fibre_score:g, fibre_gap:gapR, bracket:verdict }, true);
-  bindBuy(qBody, 'quiz');
-  document.dispatchEvent(new CustomEvent('lp:quizresult', { detail:{ score:g, gap:gapR } }));
-
-  var form = document.getElementById('nlForm');
-  if (form) form.addEventListener('submit', function(){
-    track('Lead', { content_name:'Fibre quiz result', value:0, currency:CFG.currency });
-    setTimeout(function(){
-      form.style.display = 'none';
-      document.getElementById('nlOk').style.display = 'block';
-    }, 350);
+  prog.style.width='100%';
+  count.textContent='Rezultatas';
+  requestAnimationFrame(function(){ var f=document.getElementById('resFill'); if(f) f.style.width=pct+'%'; });
+  track('LP_QuizComplete',{fibre_score:g,fibre_gap:gapR,bracket:verdict},true);
+  bindBuy(qBody,'quiz');
+  var form=document.getElementById('nlForm');
+  if(form) form.addEventListener('submit',function(){
+    track('Lead',{content_name:'Fibre quiz result',value:0,currency:CFG.currency});
+    setTimeout(function(){ form.style.display='none'; document.getElementById('nlOk').style.display='block'; },350);
   });
 }
-
 renderQ();
 
 document.querySelectorAll('.js-quizjump').forEach(function(a){
-  a.addEventListener('click', function(){ track('LP_QuizJump', {}, true); });
+  a.addEventListener('click',function(){ track('LP_QuizJump',{},true); });
 });
 
-/* ---------- scroll depth ---------- */
-var depths = {25:false,50:false,75:false,100:false};
-window.addEventListener('scroll', function(){
-  var p = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
-  [25,50,75,100].forEach(function(d){
-    if (!depths[d] && p >= d){ depths[d] = true; track('LP_Scroll', {depth:d}, true); }
-  });
-}, {passive:true});
-
-})();
-
-</script>
-<script>
-/* mirror quiz progress into the fixed top bar */
-(function(){
-  var fill = document.getElementById('topbarFill');
-  var src  = document.getElementById('qProg');
-  if (!fill || !src) return;
-  new MutationObserver(function(){ fill.style.width = src.style.width; })
-    .observe(src, { attributes:true, attributeFilter:['style'] });
+var depths={25:false,50:false,75:false,100:false};
+window.addEventListener('scroll',function(){
+  var p=(window.scrollY+window.innerHeight)/document.body.scrollHeight*100;
+  [25,50,75,100].forEach(function(d){ if(!depths[d]&&p>=d){depths[d]=true;track('LP_Scroll',{depth:d},true);} });
+},{passive:true});
 })();
 </script>
+
 </body>
 </html>

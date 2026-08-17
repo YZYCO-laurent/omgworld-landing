@@ -5,9 +5,9 @@ dependencies, one file per page.
 
 | File | URL after deploy | Concept |
 |---|---|---|
-| `index.html` | `/` | **A — brand-faithful.** The omgworld.com look, layout defects fixed. |
-| `v2.html` | `/v2` | **B — quiz-first.** The fibre test *is* the landing page. |
-| `v3.html` | `/v3` | **C — product-first.** PDP structure on a neutral canvas. |
+| `index.html` | `/` | **A — brand layout.** The playbook design made real: serif hero, floating pack, marquee, dark quiz panel. |
+| `v2.html` | `/v2` | **B — quiz-first.** The fibre test is the whole first screen. |
+| `v3.html` | `/v3` | **C — product-first.** PDP: gallery, buy box, cola comparison. |
 
 All three share the same offer, the same Shopify checkout permalink, the same
 pixel and the same quiz logic. They differ only in structure and visual system,
@@ -104,14 +104,72 @@ integration owns those.
   (`#FFE1F0`) on plum (`#8A086E`), same social accounts — plus the company
   registration details.
 
-### A note on the brand font
+---
 
-The store's display face **Gila is not used here on purpose.** It has no
-Lithuanian diacritics: `ą`, `č`, `ė`, `į` and `ų` are missing from the file and
-fall back to a system font *mid-word*, which looks broken in Lithuanian
-headlines. These pages use **Montserrat**, which is already the store's body
-face, so the pages stay on-brand without the glyph problem. If the brand wants
-Gila in headlines, the font needs a Baltic character set added first.
+## Design system
+
+All three variants are built from the **official OMG brand playbook**
+(`omg soda_playbook_2026 04 10.pdf`) via one shared stylesheet, so they look
+like one brand and differ only in page structure.
+
+| Token | Value | Playbook role |
+|---|---|---|
+| `--pink` | `#fe2490` | primary |
+| `--plum` | `#8a086e` | secondary |
+| `--ink` | `#4c001b` | text, borders, dark panels |
+| `--body` | `#6f197b` | body copy |
+| `--soft` / `--light` | `#ffe1f0` / `#ffb3ed` | backgrounds, hairlines |
+| `--lilac` / `--yellow` / `--peach` | `#ecb8fd` / `#fee881` / `#febebe` | flavour tiles, stickers |
+
+Signature devices carried over from the design: 2px `#4c001b` outlines, the
+hard offset shadow (`10px 10px 0 #ffb3ed`), pill buttons, the rotated yellow
+sticker, the pink serif marquee, and oversized serif numerals.
+
+### Typography
+
+The playbook specifies **Exposure** (display) and **Apfel Grotezk** (body).
+Both are licensed fonts and are not available to a public web page, so the
+pages use the closest free equivalents: **Instrument Serif** and **Hanken
+Grotesk**.
+
+Both were checked glyph-by-glyph and render the full Lithuanian set
+(ą č ė į š ų ū ž). This matters: the store's other display face, **Gila**, is
+missing those glyphs entirely and falls back to a system font mid-word, which
+is why it is not used anywhere here. If the brand wants Exposure/Apfel Grotezk
+on the web, the licences need a webfont tier — the swap is one line in the
+stylesheet.
+
+### Rebuilding
+
+`build.py` (one directory up) generates all three pages from the shared design
+system. Edit it and re-run `python3 build.py` to regenerate. The three HTML
+files are fully self-contained, so you can also just hand-edit them.
+
+---
+
+## What was corrected from the design mock
+
+The design file was a visual concept and carried placeholder commerce copy.
+Everything below was wrong for this launch and has been fixed against the
+store, the label and EFSA:
+
+| Mock said | Reality | Status |
+|---|---|---|
+| 26,99 € / 35,88 € | 22,87 € / 32,87 € | fixed |
+| Free shipping from €25 | Free, no minimum | fixed |
+| Delivery 1–2 working days | Checkout quotes 25–28 Aug | claim removed |
+| 30 g daily fibre norm | EFSA 25 g (also the quiz target) | fixed |
+| 9 kcal, 1 g fibre, 1,4 g sugar / 100 ml | 33 kcal, 3,3 g fibre, 5,3 g sugar / 330 ml can | replaced with label data |
+| 2 400+ buyers | 8 orders to date | removed |
+| 30-day guarantee | 14 days, per store policy | fixed |
+| "Be gliteno" | "Be glitimo" | fixed |
+| Mangas & pasiflora, Juodoji serbentė, Citrina & šeivamedis | Cherry Cola, Tropical, Strawberry Vanilla, Yuzu | fixed |
+| Founder quote from "Eve" | No such person at OMG | removed |
+| Invented reviews (Gabija R., Tomas K., Rūta M.) | The four real store reviews | replaced |
+| hello@sodaomg.com | +370 652 38011 | fixed |
+| "© OMG Bubble Tea, Panevėžys" | UAB „OMG WORLD", full registration details | fixed |
+| Quantity stepper | Fixed €10 discount + single-product strategy | removed, 1×12-pack only |
+| Ingredients incl. hibiscus / strawberry juice | The verified Tropical-flavour list | replaced |
 
 ---
 
@@ -123,7 +181,7 @@ Gila in headlines, the font needs a Baltic character set added first.
 2. **Duplicate shipping rate.** Two domestic rates both named "Free shipping",
    one at €1.00.
 3. **Fonts.** Loaded from Google Fonts. If GDPR posture requires it, self-host
-   Montserrat and drop the `<link>` tags.
+   Instrument Serif + Hanken Grotesk and drop the `<link>` tags.
 4. **Reviews.** The four Lithuanian reviews are the client's own approved copy.
 5. **Deposit (užstatas).** Partner stores charge €0,10 per can; the webshop does
    not. Worth confirming whether the same obligation applies to the online channel.
